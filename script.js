@@ -1,6 +1,6 @@
 /* =========================================================
-   ANGELO PACYA — PORTFOLIO SCRIPT
-   Gradient × Glassmorphism Portfolio
+   ANGELO PACYA — PORTFOLIO
+   Interactive Project Gallery
 ========================================================= */
 
 
@@ -23,25 +23,14 @@ function drivePreview(id) {
 
 const projects = {
 
-  /* ---------------------------------------------------------
-     FOOTLAB
-  --------------------------------------------------------- */
-
   footlab: {
-
     title: "FOOTLAB",
-
-    category:
-      "Digital Marketing · Brand Development · Creative",
+    category: "Digital Marketing · Brand Development · Creative",
+    role: "Marketing Assistant",
+    year: "2025 — 2026",
 
     description:
-      "Worked across digital marketing, social media, creative campaigns, SEO, partnerships, events, brand development, content production, and performance reporting for FOOTLAB, a custom orthotic clinic.",
-
-    role:
-      "Marketing Assistant",
-
-    year:
-      "2025 — 2026",
+      "Worked across digital marketing, social media, creative campaigns, SEO, partnerships, events, brand development, content production, and performance reporting for FOOTLAB.",
 
     services: [
       "Digital Marketing",
@@ -55,144 +44,39 @@ const projects = {
 
     media: [
 
-      {
-        type: "image",
-        id: "1HLJB4XqchXSQvDGCxOOdJySWNg17w2f6",
-        alt: "FOOTLAB creative work"
-      },
+      ["image", "1HLJB4XqchXSQvDGCxOOdJySWNg17w2f6", "FOOTLAB creative work"],
+      ["image", "1OaM732spQtU9wMFfn7Kn0tkZLJobtpi2", "FOOTLAB marketing work"],
+      ["image", "1_nwetHwOkZEZJyfEn8FE38BRAIcsU6Ox", "FOOTLAB social media creative"],
+      ["image", "1x_aTEzidyCU-5I0D6gRdlVDCaKbLjzDv", "FOOTLAB campaign creative"],
+      ["image", "19--9sx60VpOEDs1nDhTFQPNJ-wkktfQ0", "FOOTLAB event marketing"],
+      ["image", "1axbRYiS-pHxghEPdoWwC3gZjIpuZS6ON", "FOOTLAB event activation"],
+      ["image", "1Q7BcKjfB6NjxOCQuFDyTprGpEuxmc0EZ", "FOOTLAB creative campaign"],
+      ["image", "1aWISvTciZ8Ptlfv_QeEgx5URpBNd_x5N", "FOOTLAB branding"],
+      ["image", "1J2PfnMeRqi7lNCK04ELez0KYlkqdtxET", "FOOTLAB content"],
+      ["image", "15hOLxhFsXBAJU8j2YTK00-pk0a9uHSLt", "FOOTLAB marketing material"],
+      ["image", "1QhkCwEO2bUWJXDTGPGCt6uVZluTR-PLi", "FOOTLAB social media content"],
+      ["image", "17W3x-3b2rGylh_NFW16TEmwyFtCwjjYp", "FOOTLAB event creative"],
+      ["image", "10bmlvX6h72FEIm4UT4-6DFfSKyPSWNWJ", "FOOTLAB campaign"],
+      ["image", "1j1PXhsh6vr72XrSFDcudS1Qh1KwsyfrO", "FOOTLAB creative project"],
+      ["image", "1dbtq_MWQ4Xmgt7x4e_nM9HTh-FsGPh3c", "FOOTLAB marketing project"],
+      ["image", "1hfAlw4ffECSq53BEcktUnAuOathaxbpp", "FOOTLAB campaign material"],
 
-      {
-        type: "image",
-        id: "1OaM732spQtU9wMFfn7Kn0tkZLJobtpi2",
-        alt: "FOOTLAB marketing work"
-      },
-
-      {
-        type: "image",
-        id: "1_nwetHwOkZEZJyfEn8FE38BRAIcsU6Ox",
-        alt: "FOOTLAB social media creative"
-      },
-
-      {
-        type: "image",
-        id: "1x_aTEzidyCU-5I0D6gRdlVDCaKbLjzDv",
-        alt: "FOOTLAB campaign creative"
-      },
-
-      {
-        type: "image",
-        id: "19--9sx60VpOEDs1nDhTFQPNJ-wkktfQ0",
-        alt: "FOOTLAB event marketing"
-      },
-
-      {
-        type: "image",
-        id: "1axbRYiS-pHxghEPdoWwC3gZjIpuZS6ON",
-        alt: "FOOTLAB event activation"
-      },
-
-      {
-        type: "image",
-        id: "1Q7BcKjfB6NjxOCQuFDyTprGpEuxmc0EZ",
-        alt: "FOOTLAB creative campaign"
-      },
-
-      {
-        type: "image",
-        id: "1aWISvTciZ8Ptlfv_QeEgx5URpBNd_x5N",
-        alt: "FOOTLAB branding"
-      },
-
-      {
-        type: "image",
-        id: "1J2PfnMeRqi7lNCK04ELez0KYlkqdtxET",
-        alt: "FOOTLAB content"
-      },
-
-      {
-        type: "image",
-        id: "15hOLxhFsXBAJU8j2YTK00-pk0a9uHSLt",
-        alt: "FOOTLAB marketing material"
-      },
-
-      {
-        type: "image",
-        id: "1QhkCwEO2bUWJXDTGPGCt6uVZluTR-PLi",
-        alt: "FOOTLAB social media content"
-      },
-
-      {
-        type: "image",
-        id: "17W3x-3b2rGylh_NFW16TEmwyFtCwjjYp",
-        alt: "FOOTLAB event creative"
-      },
-
-      {
-        type: "image",
-        id: "10bmlvX6h72FEIm4UT4-6DFfSKyPSWNWJ",
-        alt: "FOOTLAB campaign"
-      },
-
-      {
-        type: "image",
-        id: "1j1PXhsh6vr72XrSFDcudS1Qh1KwsyfrO",
-        alt: "FOOTLAB creative project"
-      },
-
-      {
-        type: "image",
-        id: "1dbtq_MWQ4Xmgt7x4e_nM9HTh-FsGPh3c",
-        alt: "FOOTLAB marketing project"
-      },
-
-      {
-        type: "image",
-        id: "1hfAlw4ffECSq53BEcktUnAuOathaxbpp",
-        alt: "FOOTLAB campaign material"
-      },
-
-      {
-        type: "video",
-        id: "1IKmOuyCaemAlA2AmaPygY_wx9Gdlc1Vs",
-        alt: "FOOTLAB video"
-      },
-
-      {
-        type: "video",
-        id: "1u1LG67UTN3Q9uTAiWbSQ7VE5uOveRmpQ",
-        alt: "FOOTLAB video campaign"
-      },
-
-      {
-        type: "video",
-        id: "1oVfMyskS-gE0IK8uSK64bdV0hRPMOw9F",
-        alt: "FOOTLAB social media video"
-      }
+      ["video", "1IKmOuyCaemAlA2AmaPygY_wx9Gdlc1Vs", "FOOTLAB video"],
+      ["video", "1u1LG67UTN3Q9uTAiWbSQ7VE5uOveRmpQ", "FOOTLAB video campaign"],
+      ["video", "1oVfMyskS-gE0IK8uSK64bdV0hRPMOw9F", "FOOTLAB social media video"]
 
     ]
-
   },
 
 
-  /* ---------------------------------------------------------
-     KWENCH
-  --------------------------------------------------------- */
-
   kwench: {
-
     title: "Kwench Juice Cafe",
-
-    category:
-      "Social Media · Creative · Digital Marketing",
+    category: "Social Media · Creative · Digital Marketing",
+    role: "Social Media & Creative",
+    year: "2025 — 2026",
 
     description:
       "Managed social media and creative content for Kwench Juice Cafe, developing visual assets, social content, campaigns, and video materials across branch accounts.",
-
-    role:
-      "Social Media & Creative",
-
-    year:
-      "2025 — 2026",
 
     services: [
       "Social Media",
@@ -205,102 +89,32 @@ const projects = {
 
     media: [
 
-      {
-        type: "image",
-        id: "1BjQfodMYmvb8uyAbE-h_NIYZZCWP5w1o",
-        alt: "Kwench Juice Cafe creative work"
-      },
+      ["image", "1BjQfodMYmvb8uyAbE-h_NIYZZCWP5w1o", "Kwench Juice Cafe creative work"],
+      ["image", "1inkF8cQKoAc79BOoHSK4MVgOcdRaVnre", "Kwench social media creative"],
+      ["image", "1M23yNIWc8i8Z8j5aQOGw7-hz0Zt4979s", "Kwench campaign creative"],
+      ["image", "1fdRw0VsewZRWg-pOrhmV4Yb-bG-IbUQE", "Kwench branding"],
+      ["image", "13gvBEWV93TrGvWBrOxPxhM_YAjLQJw6r", "Kwench content"],
+      ["image", "1nP5A691jMtCMqvF1FuTRS4EoKqWcwkqz", "Kwench social media campaign"],
+      ["image", "1Y6-pI24HGdTKgkAY0ue8hT7gv282YlWz", "Kwench marketing creative"],
+      ["image", "1GhV_5bXTNpEwHdjiinHwi7KKexKVqYRV", "Kwench promotional content"],
 
-      {
-        type: "image",
-        id: "1inkF8cQKoAc79BOoHSK4MVgOcdRaVnre",
-        alt: "Kwench social media creative"
-      },
-
-      {
-        type: "image",
-        id: "1M23yNIWc8i8Z8j5aQOGw7-hz0Zt4979s",
-        alt: "Kwench campaign creative"
-      },
-
-      {
-        type: "image",
-        id: "1fdRw0VsewZRWg-pOrhmV4Yb-bG-IbUQE",
-        alt: "Kwench branding"
-      },
-
-      {
-        type: "image",
-        id: "13gvBEWV93TrGvWBrOxPxhM_YAjLQJw6r",
-        alt: "Kwench content"
-      },
-
-      {
-        type: "image",
-        id: "1nP5A691jMtCMqvF1FuTRS4EoKqWcwkqz",
-        alt: "Kwench social media campaign"
-      },
-
-      {
-        type: "image",
-        id: "1Y6-pI24HGdTKgkAY0ue8hT7gv282YlWz",
-        alt: "Kwench marketing creative"
-      },
-
-      {
-        type: "image",
-        id: "1GhV_5bXTNpEwHdjiinHwi7KKexKVqYRV",
-        alt: "Kwench promotional content"
-      },
-
-      {
-        type: "video",
-        id: "1eMAD62knoG7Uyyn12QxxYjDNpz6bqlQJ",
-        alt: "Kwench video"
-      },
-
-      {
-        type: "video",
-        id: "18x_ap_emNC5bQA-B0F56nhIITs2jnBcp",
-        alt: "Kwench social media video"
-      },
-
-      {
-        type: "video",
-        id: "1ZpOjXO_hGEPe1upBEoiPiKHEgPTea8OJ",
-        alt: "Kwench campaign video"
-      },
-
-      {
-        type: "video",
-        id: "1ZwD3HOULtJy92z7tjiefWOgzyPnU2G_P",
-        alt: "Kwench creative video"
-      }
+      ["video", "1eMAD62knoG7Uyyn12QxxYjDNpz6bqlQJ", "Kwench video"],
+      ["video", "18x_ap_emNC5bQA-B0F56nhIITs2jnBcp", "Kwench social media video"],
+      ["video", "1ZpOjXO_hGEPe1upBEoiPiKHEgPTea8OJ", "Kwench campaign video"],
+      ["video", "1ZwD3HOULtJy92z7tjiefWOgzyPnU2G_P", "Kwench creative video"]
 
     ]
-
   },
 
 
-  /* ---------------------------------------------------------
-     ALTA ANIMA
-  --------------------------------------------------------- */
-
   alta: {
-
     title: "Alta Anima",
-
-    category:
-      "Marketing · Design · Creative",
+    category: "Marketing · Design · Creative",
+    role: "Marketing Assistant",
+    year: "2025 — 2026",
 
     description:
       "Supported marketing and creative initiatives through visual design, campaign assets, and communication materials.",
-
-    role:
-      "Marketing Assistant",
-
-    year:
-      "2025 — 2026",
 
     services: [
       "Marketing",
@@ -311,72 +125,26 @@ const projects = {
 
     media: [
 
-      {
-        type: "image",
-        id: "1lTUxkyFAPt8_gdKYJDNJF9SqVpzicRMa",
-        alt: "Alta Anima creative work"
-      },
-
-      {
-        type: "image",
-        id: "1mrjuvoYDSzh-0-fvuvaqlavAADE9xu6h",
-        alt: "Alta Anima marketing work"
-      },
-
-      {
-        type: "image",
-        id: "1OMU-xiu4-uRwyEqNFH9-zqzctpI7l0H_",
-        alt: "Alta Anima design"
-      },
-
-      {
-        type: "image",
-        id: "1-jnAnZVFrdvNkKn8MO4utQV8u73KCSee",
-        alt: "Alta Anima creative"
-      },
-
-      {
-        type: "image",
-        id: "1rHQdSaqwIqmyPnR69vwjR-b2omc70uWq",
-        alt: "Alta Anima marketing material"
-      },
-
-      {
-        type: "image",
-        id: "1tt_P_lT6mJczZd8VarHF8-sb4aUHCZ17",
-        alt: "Alta Anima campaign"
-      },
-
-      {
-        type: "image",
-        id: "1f5uHDr4mUJpl9xVA24FW5NDm9OC-cYTC",
-        alt: "Alta Anima design project"
-      }
+      ["image", "1lTUxkyFAPt8_gdKYJDNJF9SqVpzicRMa", "Alta Anima creative work"],
+      ["image", "1mrjuvoYDSzh-0-fvuvaqlavAADE9xu6h", "Alta Anima marketing work"],
+      ["image", "1OMU-xiu4-uRwyEqNFH9-zqzctpI7l0H_", "Alta Anima design"],
+      ["image", "1-jnAnZVFrdvNkKn8MO4utQV8u73KCSee", "Alta Anima creative"],
+      ["image", "1rHQdSaqwIqmyPnR69vwjR-b2omc70uWq", "Alta Anima marketing material"],
+      ["image", "1tt_P_lT6mJczZd8VarHF8-sb4aUHCZ17", "Alta Anima campaign"],
+      ["image", "1f5uHDr4mUJpl9xVA24FW5NDm9OC-cYTC", "Alta Anima design project"]
 
     ]
-
   },
 
 
-  /* ---------------------------------------------------------
-     SOLOUR
-  --------------------------------------------------------- */
-
   solour: {
-
     title: "Solour",
-
-    category:
-      "Brand Strategy · Creative · Marketing",
+    category: "Brand Strategy · Creative · Marketing",
+    role: "Marketing & Creative",
+    year: "Academic Project",
 
     description:
       "An academic marketing and branding project focused on a lip-care sunbalm, covering research, target audience, positioning, branding, creative development, and marketing strategy.",
-
-    role:
-      "Marketing & Creative",
-
-    year:
-      "Academic Project",
 
     services: [
       "Brand Strategy",
@@ -389,72 +157,26 @@ const projects = {
 
     media: [
 
-      {
-        type: "image",
-        id: "1qoD8imjaSILu9wVi-46-ORnRPgOJGTKk",
-        alt: "Solour brand project"
-      },
-
-      {
-        type: "image",
-        id: "1IiTa4hUHAAWFIS6nu9PkrKaHjcW-Dzmt",
-        alt: "Solour branding"
-      },
-
-      {
-        type: "image",
-        id: "1_2febscGC-VMWCeZ1L1A6tAda2nElI5_",
-        alt: "Solour campaign"
-      },
-
-      {
-        type: "image",
-        id: "1SGnr5zjLr45yFaUB9fmqFaOKws4NKS-j",
-        alt: "Solour marketing creative"
-      },
-
-      {
-        type: "image",
-        id: "12ysk-3g-gdaCZWat50s-9j2KhpyubcOR",
-        alt: "Solour visual identity"
-      },
-
-      {
-        type: "image",
-        id: "1s3SJeJe0VquBI0Ye5GOBkDEQKpayrmF0",
-        alt: "Solour creative"
-      },
-
-      {
-        type: "image",
-        id: "1LApEqZ4eHB7OMUGggOVemGjmJyxsSAET",
-        alt: "Solour brand presentation"
-      }
+      ["image", "1qoD8imjaSILu9wVi-46-ORnRPgOJGTKk", "Solour brand project"],
+      ["image", "1IiTa4hUHAAWFIS6nu9PkrKaHjcW-Dzmt", "Solour branding"],
+      ["image", "1_2febscGC-VMWCeZ1L1A6tAda2nElI5_", "Solour campaign"],
+      ["image", "1SGnr5zjLr45yFaUB9fmqFaOKws4NKS-j", "Solour marketing creative"],
+      ["image", "12ysk-3g-gdaCZWat50s-9j2KhpyubcOR", "Solour visual identity"],
+      ["image", "1s3SJeJe0VquBI0Ye5GOBkDEQKpayrmF0", "Solour creative"],
+      ["image", "1LApEqZ4eHB7OMUGggOVemGjmJyxsSAET", "Solour brand presentation"]
 
     ]
-
   },
 
 
-  /* ---------------------------------------------------------
-     SM SUPERMALLS
-  --------------------------------------------------------- */
-
   sm: {
-
     title: "SM Supermalls",
-
-    category:
-      "Operations · Events · Marketing",
+    category: "Operations · Events · Marketing",
+    role: "Operations Intern · MSME",
+    year: "2025 — 2026",
 
     description:
       "Worked under the MSME team at SM Supermalls Head Office, supporting mall monitoring, reporting, documentation, event coordination, presentations, partnership materials, and physical marketing initiatives.",
-
-    role:
-      "Operations Intern · MSME",
-
-    year:
-      "2025 — 2026",
 
     services: [
       "Operations",
@@ -467,29 +189,17 @@ const projects = {
     ],
 
     media: []
-
   },
 
 
-  /* ---------------------------------------------------------
-     WEB3
-  --------------------------------------------------------- */
-
   web3: {
-
     title: "Web3",
-
-    category:
-      "Community · Marketing · Partnerships",
+    category: "Community · Marketing · Partnerships",
+    role: "Community · Marketing · Partnerships",
+    year: "2022 — 2024",
 
     description:
       "Started working in Web3 and digital communities while young, working across community management, Discord moderation, community building, partnerships, strategic communications, and digital marketing for more than 30 brands and projects.",
-
-    role:
-      "Community · Marketing · Partnerships",
-
-    year:
-      "2022 — 2024",
 
     services: [
       "Community Management",
@@ -501,29 +211,44 @@ const projects = {
     ],
 
     media: []
-
   }
 
 };
 
 
 /* =========================================================
-   DOM ELEMENTS
+   DOM
 ========================================================= */
 
-const projectModal = document.getElementById("projectModal");
-const modalContent = document.getElementById("modalContent");
+const projectModal =
+  document.getElementById("projectModal");
 
-const lightbox = document.getElementById("lightbox");
-const lightboxImage = document.getElementById("lightboxImage");
-const lightboxVideo = document.getElementById("lightboxVideo");
+const modalContent =
+  document.getElementById("modalContent");
 
-const modalClose = document.querySelector(".modal-close");
-const lightboxClose = document.querySelector(".lightbox-close");
-const lightboxPrev = document.querySelector(".lightbox-prev");
-const lightboxNext = document.querySelector(".lightbox-next");
+const lightbox =
+  document.getElementById("lightbox");
 
-const workCards = document.querySelectorAll(".work-card");
+const lightboxImage =
+  document.getElementById("lightboxImage");
+
+const lightboxVideo =
+  document.getElementById("lightboxVideo");
+
+const modalClose =
+  document.querySelector(".modal-close");
+
+const lightboxClose =
+  document.querySelector(".lightbox-close");
+
+const lightboxPrev =
+  document.querySelector(".lightbox-prev");
+
+const lightboxNext =
+  document.querySelector(".lightbox-next");
+
+const workCards =
+  document.querySelectorAll(".work-card");
 
 
 /* =========================================================
@@ -535,44 +260,92 @@ let currentMediaIndex = 0;
 
 
 /* =========================================================
-   PROJECT MODAL
+   MEDIA COUNTS
+========================================================= */
+
+function getMediaCounts(project) {
+
+  const photos =
+    project.media.filter(
+      item => item[0] === "image"
+    ).length;
+
+  const videos =
+    project.media.filter(
+      item => item[0] === "video"
+    ).length;
+
+  return {
+    photos,
+    videos,
+    total: photos + videos
+  };
+
+}
+
+
+/* =========================================================
+   OPEN PROJECT
 ========================================================= */
 
 function openProject(projectKey) {
 
-  const project = projects[projectKey];
+  const project =
+    projects[projectKey];
 
-  if (!project) {
-    console.warn(`Project "${projectKey}" was not found.`);
-    return;
-  }
+  if (!project) return;
 
-  currentProject = projectKey;
+  currentProject =
+    projectKey;
+
   currentMediaIndex = 0;
 
-  modalContent.innerHTML = buildProjectModal(project);
+  modalContent.innerHTML =
+    buildProjectModal(project);
 
   projectModal.classList.add("active");
-  projectModal.setAttribute("aria-hidden", "false");
 
-  document.body.classList.add("modal-open");
+  projectModal.setAttribute(
+    "aria-hidden",
+    "false"
+  );
+
+  document.body.classList.add(
+    "modal-open"
+  );
 
   projectModal.scrollTop = 0;
 
   attachGalleryListeners();
+
 }
 
 
+/* =========================================================
+   CLOSE PROJECT
+========================================================= */
+
 function closeProject() {
 
-  projectModal.classList.remove("active");
-  projectModal.setAttribute("aria-hidden", "true");
+  projectModal.classList.remove(
+    "active"
+  );
 
-  document.body.classList.remove("modal-open");
+  projectModal.setAttribute(
+    "aria-hidden",
+    "true"
+  );
+
+  document.body.classList.remove(
+    "modal-open"
+  );
+
+  closeLightbox();
 
   currentProject = null;
 
   modalContent.innerHTML = "";
+
 }
 
 
@@ -582,166 +355,332 @@ function closeProject() {
 
 function buildProjectModal(project) {
 
-  const mediaHTML = project.media.length
-    ? project.media
-        .map((item, index) => {
+  const counts =
+    getMediaCounts(project);
 
-          if (item.type === "video") {
 
-            return `
-              <button
-                class="project-media-item project-video-item"
-                type="button"
-                data-media-index="${index}"
-              >
+  const servicesHTML =
+    project.services
+      .map(service => `
+        <span>${escapeHTML(service)}</span>
+      `)
+      .join("");
 
-                <div class="video-thumbnail">
 
-                  <span class="video-play">
-                    ▶
-                  </span>
-
-                  <span class="video-label">
-                    VIDEO
-                  </span>
-
-                </div>
-
-              </button>
-            `;
-
-          }
-
-          return `
-            <button
-              class="project-media-item"
-              type="button"
-              data-media-index="${index}"
-            >
-
-              <img
-                src="${driveImage(item.id, "w1200")}"
-                alt="${escapeHTML(item.alt)}"
-                loading="lazy"
-              />
-
-              <span class="media-expand">
-                ↗
-              </span>
-
-            </button>
-          `;
-
-        })
-        .join("")
-    : `
+  const galleryHTML =
+    project.media.length
+      ? project.media
+          .map(
+            (item, index) =>
+              buildGalleryItem(
+                item,
+                index
+              )
+          )
+          .join("")
+      : `
         <div class="project-no-media">
 
-          <span>
-            Project overview
-          </span>
+          <span>PROJECT OVERVIEW</span>
 
           <p>
-            Detailed visual documentation available upon request.
+            Visual documentation available upon request.
           </p>
 
         </div>
       `;
 
 
-  const servicesHTML = project.services
-    .map(service => `
-      <span>${escapeHTML(service)}</span>
-    `)
-    .join("");
-
-
   return `
 
-    <div class="modal-project-header">
-
-      <div class="modal-project-meta">
-
-        <span>${escapeHTML(project.category)}</span>
-
-        <span>${escapeHTML(project.year)}</span>
-
-      </div>
+    <div class="project-modal-inner">
 
 
-      <h2>
-        ${escapeHTML(project.title)}
-      </h2>
+      <!-- PROJECT HEADER -->
+
+      <header class="modal-project-header">
+
+        <div class="modal-project-topline">
+
+          <span>
+            ${escapeHTML(project.category)}
+          </span>
+
+          <span>
+            ${escapeHTML(project.year)}
+          </span>
+
+        </div>
 
 
-      <p class="modal-description">
-        ${escapeHTML(project.description)}
-      </p>
+        <div class="modal-title-row">
 
-    </div>
+          <div>
 
+            <h2>
+              ${escapeHTML(project.title)}
+            </h2>
 
-    <div class="modal-project-details">
+            <p class="modal-description">
+              ${escapeHTML(project.description)}
+            </p>
 
-      <div class="modal-detail-block">
-
-        <span class="detail-label">
-          ROLE
-        </span>
-
-        <strong>
-          ${escapeHTML(project.role)}
-        </strong>
-
-      </div>
+          </div>
 
 
-      <div class="modal-detail-block">
+          <div class="modal-media-summary">
 
-        <span class="detail-label">
-          SERVICES
-        </span>
+            <strong>
+              ${counts.total}
+            </strong>
 
-        <div class="modal-services">
-          ${servicesHTML}
+            <span>
+              CREATIVE PIECES
+            </span>
+
+            <small>
+              ${counts.photos} photos
+              ${counts.videos ? ` · ${counts.videos} videos` : ""}
+            </small>
+
+          </div>
+
+        </div>
+
+      </header>
+
+
+      <!-- ROLE / SERVICES -->
+
+      <div class="modal-project-details">
+
+        <div class="modal-detail-block">
+
+          <span class="detail-label">
+            ROLE
+          </span>
+
+          <strong>
+            ${escapeHTML(project.role)}
+          </strong>
+
+        </div>
+
+
+        <div class="modal-detail-block">
+
+          <span class="detail-label">
+            WHAT I WORKED ON
+          </span>
+
+          <div class="modal-services">
+            ${servicesHTML}
+          </div>
+
         </div>
 
       </div>
 
-    </div>
+
+      <!-- GALLERY INTRO -->
+
+      ${
+        project.media.length
+          ? `
+
+            <div class="gallery-heading">
+
+              <div>
+
+                <span class="gallery-eyebrow">
+                  CREATIVE OUTPUT
+                </span>
+
+                <h3>
+                  Explore the work.
+                </h3>
+
+              </div>
 
 
-    <div class="project-gallery">
+              <p>
+                Click any piece to view it larger.
+              </p>
 
-      ${mediaHTML}
+            </div>
+
+          `
+          : ""
+      }
+
+
+      <!-- CREATIVE GALLERY -->
+
+      <div class="project-gallery">
+
+        ${galleryHTML}
+
+      </div>
+
+
+      ${
+        project.media.length
+          ? `
+
+            <div class="gallery-footer">
+
+              <span>
+                ${counts.photos} PHOTOS
+              </span>
+
+              ${
+                counts.videos
+                  ? `
+                    <span>
+                      ${counts.videos} VIDEOS
+                    </span>
+                  `
+                  : ""
+              }
+
+              <span>
+                CLICK TO EXPLORE
+              </span>
+
+            </div>
+
+          `
+          : ""
+      }
+
 
     </div>
 
   `;
+
 }
 
 
 /* =========================================================
-   GALLERY LISTENERS
+   GALLERY ITEM
+========================================================= */
+
+function buildGalleryItem(
+  item,
+  index
+) {
+
+  const type =
+    item[0];
+
+  const id =
+    item[1];
+
+  const alt =
+    item[2];
+
+
+  if (type === "video") {
+
+    return `
+
+      <button
+        type="button"
+        class="project-media-item gallery-video"
+        data-media-index="${index}"
+      >
+
+        <div class="video-preview">
+
+          <div class="video-preview-gradient"></div>
+
+          <span class="video-play-button">
+            ▶
+          </span>
+
+          <span class="video-badge">
+            VIDEO
+          </span>
+
+          <span class="media-number">
+            ${String(index + 1).padStart(2, "0")}
+          </span>
+
+        </div>
+
+      </button>
+
+    `;
+
+  }
+
+
+  return `
+
+    <button
+      type="button"
+      class="project-media-item gallery-image"
+      data-media-index="${index}"
+    >
+
+      <img
+        src="${driveImage(id, "w1600")}"
+        alt="${escapeHTML(alt)}"
+        loading="lazy"
+      />
+
+
+      <div class="media-hover">
+
+        <span>
+          VIEW
+        </span>
+
+        <span>
+          ↗
+        </span>
+
+      </div>
+
+
+      <span class="media-number">
+        ${String(index + 1).padStart(2, "0")}
+      </span>
+
+    </button>
+
+  `;
+
+}
+
+
+/* =========================================================
+   GALLERY EVENTS
 ========================================================= */
 
 function attachGalleryListeners() {
 
-  const mediaItems = document.querySelectorAll(
-    ".project-media-item"
-  );
+  const mediaItems =
+    document.querySelectorAll(
+      ".project-media-item"
+    );
+
 
   mediaItems.forEach(item => {
 
-    item.addEventListener("click", () => {
+    item.addEventListener(
+      "click",
+      () => {
 
-      const index = Number(
-        item.dataset.mediaIndex
-      );
+        const index =
+          Number(
+            item.dataset.mediaIndex
+          );
 
-      openLightbox(index);
+        openLightbox(index);
 
-    });
+      }
+    );
 
   });
 
@@ -754,192 +693,218 @@ function attachGalleryListeners() {
 
 function openLightbox(index) {
 
-  if (!currentProject) {
+  if (!currentProject) return;
+
+
+  const project =
+    projects[currentProject];
+
+
+  if (!project.media.length) {
     return;
   }
 
-  const project = projects[currentProject];
-
-  if (!project || !project.media.length) {
-    return;
-  }
 
   if (index < 0) {
-    index = project.media.length - 1;
+
+    index =
+      project.media.length - 1;
+
   }
 
-  if (index >= project.media.length) {
+
+  if (
+    index >=
+    project.media.length
+  ) {
+
     index = 0;
+
   }
 
-  currentMediaIndex = index;
 
-  const item = project.media[index];
+  currentMediaIndex =
+    index;
 
-  lightbox.classList.add("active");
-  lightbox.setAttribute("aria-hidden", "false");
 
-  document.body.classList.add("modal-open");
+  const item =
+    project.media[index];
+
+
+  lightbox.classList.add(
+    "active"
+  );
+
+  lightbox.setAttribute(
+    "aria-hidden",
+    "false"
+  );
+
 
   renderLightboxMedia(item);
+
 }
 
 
-function closeLightbox() {
-
-  lightbox.classList.remove("active");
-  lightbox.setAttribute("aria-hidden", "true");
-
-  stopLightboxVideo();
-
-  document.body.classList.add("modal-open");
-}
-
+/* =========================================================
+   LIGHTBOX MEDIA
+========================================================= */
 
 function renderLightboxMedia(item) {
 
   stopLightboxVideo();
 
 
-  if (item.type === "image") {
+  if (item[0] === "image") {
 
     lightboxImage.src =
-      driveImage(item.id, "w2000");
+      driveImage(
+        item[1],
+        "w2400"
+      );
 
     lightboxImage.alt =
-      item.alt || "";
+      item[2] || "";
+
 
     lightboxImage.style.display =
       "block";
 
+
     lightboxVideo.style.display =
       "none";
 
+
     return;
+
   }
 
 
-  if (item.type === "video") {
+  if (item[0] === "video") {
 
     lightboxImage.style.display =
       "none";
 
+
     lightboxVideo.style.display =
       "block";
 
+
     lightboxVideo.src =
-      drivePreview(item.id);
+      drivePreview(item[1]);
+
 
     lightboxVideo.setAttribute(
       "allow",
       "autoplay; fullscreen"
     );
 
+
     lightboxVideo.setAttribute(
       "allowfullscreen",
       ""
     );
 
-    lightboxVideo.style.width =
-      "min(90vw, 1100px)";
-
-    lightboxVideo.style.height =
-      "min(75vh, 700px)";
-
-    lightboxVideo.style.border =
-      "none";
-
-    lightboxVideo.style.borderRadius =
-      "14px";
-
-    lightboxVideo.style.background =
-      "#111";
-
   }
 
-}
-
-
-function stopLightboxVideo() {
-
-  lightboxVideo.src = "";
-
-  lightboxVideo.style.display =
-    "none";
-
-  lightboxImage.src = "";
-
-  lightboxImage.style.display =
-    "none";
 }
 
 
 /* =========================================================
-   LIGHTBOX NAVIGATION
+   CLOSE LIGHTBOX
+========================================================= */
+
+function closeLightbox() {
+
+  if (!lightbox) return;
+
+
+  lightbox.classList.remove(
+    "active"
+  );
+
+
+  lightbox.setAttribute(
+    "aria-hidden",
+    "true"
+  );
+
+
+  stopLightboxVideo();
+
+}
+
+
+/* =========================================================
+   STOP VIDEO
+========================================================= */
+
+function stopLightboxVideo() {
+
+  if (!lightboxVideo) return;
+
+  lightboxVideo.src = "";
+
+}
+
+
+/* =========================================================
+   NAVIGATION
 ========================================================= */
 
 function nextMedia() {
 
-  if (!currentProject) {
-    return;
-  }
+  if (!currentProject) return;
+
 
   const project =
     projects[currentProject];
 
-  if (!project.media.length) {
-    return;
-  }
 
   openLightbox(
     currentMediaIndex + 1
   );
+
 }
 
 
 function previousMedia() {
 
-  if (!currentProject) {
-    return;
-  }
+  if (!currentProject) return;
 
-  const project =
-    projects[currentProject];
-
-  if (!project.media.length) {
-    return;
-  }
 
   openLightbox(
     currentMediaIndex - 1
   );
+
 }
 
 
 /* =========================================================
-   WORK CARD EVENTS
+   WORK CARDS
 ========================================================= */
 
 workCards.forEach(card => {
 
-  card.addEventListener("click", event => {
+  card.addEventListener(
+    "click",
+    () => {
 
-    const projectKey =
-      card.dataset.project;
+      const projectKey =
+        card.dataset.project;
 
-    if (!projectKey) {
-      return;
+      if (!projectKey) return;
+
+      openProject(projectKey);
+
     }
-
-    openProject(projectKey);
-
-  });
+  );
 
 });
 
 
 /* =========================================================
-   CLOSE EVENTS
+   CLOSE BUTTONS
 ========================================================= */
 
 if (modalClose) {
@@ -962,16 +927,6 @@ if (lightboxClose) {
 }
 
 
-if (lightboxPrev) {
-
-  lightboxPrev.addEventListener(
-    "click",
-    previousMedia
-  );
-
-}
-
-
 if (lightboxNext) {
 
   lightboxNext.addEventListener(
@@ -982,8 +937,18 @@ if (lightboxNext) {
 }
 
 
+if (lightboxPrev) {
+
+  lightboxPrev.addEventListener(
+    "click",
+    previousMedia
+  );
+
+}
+
+
 /* =========================================================
-   BACKDROP CLOSE
+   BACKDROP CLICK
 ========================================================= */
 
 if (projectModal) {
@@ -993,10 +958,7 @@ if (projectModal) {
     event => {
 
       if (
-        event.target === projectModal ||
-        event.target.classList.contains(
-          "modal-backdrop"
-        )
+        event.target === projectModal
       ) {
 
         closeProject();
@@ -1015,7 +977,9 @@ if (lightbox) {
     "click",
     event => {
 
-      if (event.target === lightbox) {
+      if (
+        event.target === lightbox
+      ) {
 
         closeLightbox();
 
@@ -1028,23 +992,29 @@ if (lightbox) {
 
 
 /* =========================================================
-   KEYBOARD CONTROLS
+   KEYBOARD
 ========================================================= */
 
 document.addEventListener(
   "keydown",
   event => {
 
-    if (event.key === "Escape") {
+    if (
+      event.key === "Escape"
+    ) {
 
       if (
-        lightbox.classList.contains("active")
+        lightbox.classList.contains(
+          "active"
+        )
       ) {
 
         closeLightbox();
 
       } else if (
-        projectModal.classList.contains("active")
+        projectModal.classList.contains(
+          "active"
+        )
       ) {
 
         closeProject();
@@ -1055,15 +1025,26 @@ document.addEventListener(
 
 
     if (
-      lightbox.classList.contains("active")
+      lightbox.classList.contains(
+        "active"
+      )
     ) {
 
-      if (event.key === "ArrowRight") {
+      if (
+        event.key === "ArrowRight"
+      ) {
+
         nextMedia();
+
       }
 
-      if (event.key === "ArrowLeft") {
+
+      if (
+        event.key === "ArrowLeft"
+      ) {
+
         previousMedia();
+
       }
 
     }
@@ -1073,11 +1054,13 @@ document.addEventListener(
 
 
 /* =========================================================
-   SMOOTH ANCHOR NAVIGATION
+   SMOOTH SCROLL
 ========================================================= */
 
 document
-  .querySelectorAll('a[href^="#"]')
+  .querySelectorAll(
+    'a[href^="#"]'
+  )
   .forEach(anchor => {
 
     anchor.addEventListener(
@@ -1085,23 +1068,32 @@ document
       event => {
 
         const targetID =
-          anchor.getAttribute("href");
+          anchor.getAttribute(
+            "href"
+          );
+
 
         if (
           !targetID ||
           targetID === "#"
         ) {
+
           return;
+
         }
+
 
         const target =
-          document.querySelector(targetID);
+          document.querySelector(
+            targetID
+          );
 
-        if (!target) {
-          return;
-        }
+
+        if (!target) return;
+
 
         event.preventDefault();
+
 
         target.scrollIntoView({
           behavior: "smooth",
@@ -1115,45 +1107,42 @@ document
 
 
 /* =========================================================
-   HEADER SCROLL STATE
+   HEADER
 ========================================================= */
 
 const siteHeader =
-  document.querySelector(".site-header");
+  document.querySelector(
+    ".site-header"
+  );
+
 
 function updateHeader() {
 
-  if (!siteHeader) {
-    return;
-  }
+  if (!siteHeader) return;
 
-  if (window.scrollY > 40) {
 
-    siteHeader.classList.add(
-      "scrolled"
-    );
-
-  } else {
-
-    siteHeader.classList.remove(
-      "scrolled"
-    );
-
-  }
+  siteHeader.classList.toggle(
+    "scrolled",
+    window.scrollY > 40
+  );
 
 }
+
 
 window.addEventListener(
   "scroll",
   updateHeader,
-  { passive: true }
+  {
+    passive: true
+  }
 );
+
 
 updateHeader();
 
 
 /* =========================================================
-   REVEAL ANIMATIONS
+   REVEAL
 ========================================================= */
 
 const revealElements =
@@ -1163,30 +1152,34 @@ const revealElements =
 
 
 if (
-  "IntersectionObserver" in window
+  "IntersectionObserver"
+  in window
 ) {
 
   const revealObserver =
     new IntersectionObserver(
       entries => {
 
-        entries.forEach(entry => {
+        entries.forEach(
+          entry => {
 
-          if (
-            entry.isIntersecting
-          ) {
+            if (
+              entry.isIntersecting
+            ) {
 
-            entry.target.classList.add(
-              "is-visible"
-            );
+              entry.target.classList.add(
+                "is-visible"
+              );
 
-            revealObserver.unobserve(
-              entry.target
-            );
+
+              revealObserver.unobserve(
+                entry.target
+              );
+
+            }
 
           }
-
-        });
+        );
 
       },
       {
@@ -1202,6 +1195,7 @@ if (
         "reveal"
       );
 
+
       revealObserver.observe(
         element
       );
@@ -1213,147 +1207,7 @@ if (
 
 
 /* =========================================================
-   IMAGE ERROR HANDLING
-========================================================= */
-
-document.addEventListener(
-  "error",
-  event => {
-
-    const element =
-      event.target;
-
-    if (
-      element.tagName !== "IMG"
-    ) {
-      return;
-    }
-
-    if (
-      element.dataset.fallbackApplied
-    ) {
-      return;
-    }
-
-    element.dataset.fallbackApplied =
-      "true";
-
-    element.src =
-      createFallbackImage(
-        element.alt || "Creative project"
-      );
-
-  },
-  true
-);
-
-
-/* =========================================================
-   FALLBACK IMAGE
-========================================================= */
-
-function createFallbackImage(
-  text
-) {
-
-  const safeText =
-    String(text)
-      .replace(
-        /[<>&'"]/g,
-        ""
-      )
-      .slice(0, 35);
-
-
-  const svg = `
-
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="1200"
-      height="1000"
-      viewBox="0 0 1200 1000"
-    >
-
-      <defs>
-
-        <linearGradient
-          id="gradient"
-          x1="0%"
-          y1="0%"
-          x2="100%"
-          y2="100%"
-        >
-
-          <stop
-            offset="0%"
-            stop-color="#cfc5ff"
-          />
-
-          <stop
-            offset="50%"
-            stop-color="#b9d8ff"
-          />
-
-          <stop
-            offset="100%"
-            stop-color="#c8e8d8"
-          />
-
-        </linearGradient>
-
-      </defs>
-
-
-      <rect
-        width="1200"
-        height="1000"
-        fill="url(#gradient)"
-      />
-
-
-      <circle
-        cx="950"
-        cy="170"
-        r="260"
-        fill="rgba(255,255,255,0.28)"
-      />
-
-
-      <circle
-        cx="250"
-        cy="850"
-        r="320"
-        fill="rgba(255,255,255,0.20)"
-      />
-
-
-      <text
-        x="600"
-        y="500"
-        text-anchor="middle"
-        dominant-baseline="middle"
-        font-family="Arial, sans-serif"
-        font-size="54"
-        font-weight="700"
-        fill="#171717"
-      >
-        ${safeText}
-      </text>
-
-    </svg>
-
-  `;
-
-
-  return `
-    data:image/svg+xml;charset=UTF-8,
-    ${encodeURIComponent(svg)}
-  `;
-}
-
-
-/* =========================================================
-   HTML ESCAPE
+   ESCAPE HTML
 ========================================================= */
 
 function escapeHTML(value) {
@@ -1384,116 +1238,61 @@ function escapeHTML(value) {
 
 
 /* =========================================================
-   HERO PARALLAX
+   BODY SCROLL CONTROL
 ========================================================= */
 
-const heroVisual =
-  document.querySelector(".hero-visual");
+const bodyObserver =
+  new MutationObserver(
+    () => {
 
-
-if (
-  heroVisual &&
-  window.matchMedia(
-    "(pointer: fine)"
-  ).matches
-) {
-
-  heroVisual.addEventListener(
-    "mousemove",
-    event => {
-
-      const rect =
-        heroVisual.getBoundingClientRect();
-
-      const x =
-        (event.clientX - rect.left) /
-        rect.width -
-        0.5;
-
-      const y =
-        (event.clientY - rect.top) /
-        rect.height -
-        0.5;
-
-
-      const mainCard =
-        heroVisual.querySelector(
-          ".glass-card-main"
-        );
-
-      const smallOne =
-        heroVisual.querySelector(
-          ".small-one"
-        );
-
-      const smallTwo =
-        heroVisual.querySelector(
-          ".small-two"
+      const projectOpen =
+        projectModal &&
+        projectModal.classList.contains(
+          "active"
         );
 
 
-      if (mainCard) {
-
-        mainCard.style.transform =
-          `translate(${x * 10}px, ${y * 10}px) rotate(3deg)`;
-
-      }
-
-
-      if (smallOne) {
-
-        smallOne.style.transform =
-          `translate(${x * -15}px, ${y * -15}px) rotate(-7deg)`;
-
-      }
+      const lightboxOpen =
+        lightbox &&
+        lightbox.classList.contains(
+          "active"
+        );
 
 
-      if (smallTwo) {
-
-        smallTwo.style.transform =
-          `translate(${x * 18}px, ${y * 18}px) rotate(7deg)`;
-
-      }
+      document.body.classList.toggle(
+        "modal-open",
+        projectOpen ||
+        lightboxOpen
+      );
 
     }
   );
 
 
-  heroVisual.addEventListener(
-    "mouseleave",
-    () => {
+if (projectModal) {
 
-      const mainCard =
-        heroVisual.querySelector(
-          ".glass-card-main"
-        );
+  bodyObserver.observe(
+    projectModal,
+    {
+      attributes: true,
+      attributeFilter: [
+        "class"
+      ]
+    }
+  );
 
-      const smallOne =
-        heroVisual.querySelector(
-          ".small-one"
-        );
-
-      const smallTwo =
-        heroVisual.querySelector(
-          ".small-two"
-        );
+}
 
 
-      if (mainCard) {
-        mainCard.style.transform =
-          "";
-      }
+if (lightbox) {
 
-      if (smallOne) {
-        smallOne.style.transform =
-          "";
-      }
-
-      if (smallTwo) {
-        smallTwo.style.transform =
-          "";
-      }
-
+  bodyObserver.observe(
+    lightbox,
+    {
+      attributes: true,
+      attributeFilter: [
+        "class"
+      ]
     }
   );
 
@@ -1501,9 +1300,9 @@ if (
 
 
 /* =========================================================
-   INITIALIZE
+   INITIALIZED
 ========================================================= */
 
 console.log(
-  "Angelo Pacya portfolio initialized."
+  "Angelo Pacya Portfolio — Gallery Ready"
 );
