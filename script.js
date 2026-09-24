@@ -1,315 +1,121 @@
 /* =========================================================
    ANGELO PACYA PORTFOLIO
-   COMPLETE SCRIPT
+   PROJECT INTERACTION SCRIPT
 ========================================================= */
 
-
-/* =========================================================
-   PROJECT DATA
-========================================================= */
-
-const projects = {
+const PROJECTS = {
 
   footlab: {
     title: "FOOTLAB",
-    category: "Digital Marketing · Brand Development",
+    category: "DIGITAL MARKETING · BRAND DEVELOPMENT",
     description:
       "Marketing and creative work for FOOTLAB, covering social media, content strategy, campaigns, events, partnerships, physical marketing, and brand development.",
-
-    tags: [
-      "Digital Marketing",
-      "Social Media",
-      "Creative Production",
-      "Events",
-      "Brand Development"
-    ],
-
-    cover:
-      "1HLJB4XqchXSQvDGCxOOdJySWNg17w2f6",
+    cover: "1HLJB4XqchXSQvDGCxOOdJySWNg17w2f6",
 
     media: [
+      ["image", "1HLJB4XqchXSQvDGCxOOdJySWNg17w2f6"],
+      ["image", "1OaM732spQtU9wMFfn7Kn0tkZLJobtpi2"],
+      ["image", "1_nwetHwOkZEZJyfEn8FE38BRAIcsU6Ox"],
+      ["image", "1x_aTEzidyCU-5I0D6gRdlVDCaKbLjzDv"],
+      ["image", "19--9sx60VpOEDs1nDhTFQPNJ-wkktfQ0"],
+      ["image", "1axbRYiS-pHxghEPdoWwC3gZjIpuZS6ON"],
+      ["image", "1Q7BcKjfB6NjxOCQuFDyTprGpEuxmc0EZ"],
+      ["image", "1aWISvTciZ8Ptlfv_QeEgx5URpBNd_x5N"],
+      ["image", "1J2PfnMeRqi7lNCK04ELez0KYlkqdtxET"],
+      ["image", "15hOLxhFsXBAJU8j2YTK00-pk0a9uHSLt"],
+      ["image", "1QhkCwEO2bUWJXDTGPGCt6uVZluTR-PLi"],
+      ["image", "17W3x-3b2rGylh_NFW16TEmwyFtCwjjYp"],
+      ["image", "10bmlvX6h72FEIm4UT4-6DFfSKyPSWNWJ"],
+      ["image", "1j1PXhsh6vr72XrSFDcudS1Qh1KwsyfrO"],
+      ["image", "1dbtq_MWQ4Xmgt7x4e_nM9HTh-FsGPh3c"],
+      ["image", "1hfAlw4ffECSq53BEcktUnAuOathaxbpp"],
 
-      {
-        type: "image",
-        id: "1HLJB4XqchXSQvDGCxOOdJySWNg17w2f6"
-      },
-      {
-        type: "image",
-        id: "1OaM732spQtU9wMFfn7Kn0tkZLJobtpi2"
-      },
-      {
-        type: "image",
-        id: "1_nwetHwOkZEZJyfEn8FE38BRAIcsU6Ox"
-      },
-      {
-        type: "image",
-        id: "1x_aTEzidyCU-5I0D6gRdlVDCaKbLjzDv"
-      },
-      {
-        type: "image",
-        id: "19--9sx60VpOEDs1nDhTFQPNJ-wkktfQ0"
-      },
-      {
-        type: "image",
-        id: "1axbRYiS-pHxghEPdoWwC3gZjIpuZS6ON"
-      },
-      {
-        type: "image",
-        id: "1Q7BcKjfB6NjxOCQuFDyTprGpEuxmc0EZ"
-      },
-      {
-        type: "image",
-        id: "1aWISvTciZ8Ptlfv_QeEgx5URpBNd_x5N"
-      },
-      {
-        type: "image",
-        id: "1J2PfnMeRqi7lNCK04ELez0KYlkqdtxET"
-      },
-      {
-        type: "image",
-        id: "15hOLxhFsXBAJU8j2YTK00-pk0a9uHSLt"
-      },
-      {
-        type: "image",
-        id: "1QhkCwEO2bUWJXDTGPGCt6uVZluTR-PLi"
-      },
-      {
-        type: "image",
-        id: "17W3x-3b2rGylh_NFW16TEmwyFtCwjjYp"
-      },
-      {
-        type: "image",
-        id: "10bmlvX6h72FEIm4UT4-6DFfSKyPSWNWJ"
-      },
-      {
-        type: "image",
-        id: "1j1PXhsh6vr72XrSFDcudS1Qh1KwsyfrO"
-      },
-      {
-        type: "image",
-        id: "1dbtq_MWQ4Xmgt7x4e_nM9HTh-FsGPh3c"
-      },
-      {
-        type: "image",
-        id: "1hfAlw4ffECSq53BEcktUnAuOathaxbpp"
-      },
-
-      {
-        type: "video",
-        id: "1IKmOuyCaemAlA2AmaPygY_wx9Gdlc1Vs"
-      },
-      {
-        type: "video",
-        id: "1u1LG67UTN3Q9uTAiWbSQ7VE5uOveRmpQ"
-      },
-      {
-        type: "video",
-        id: "1oVfMyskS-gE0IK8uSK64bdV0hRPMOw9F"
-      }
+      ["video", "1IKmOuyCaemAlA2AmaPygY_wx9Gdlc1Vs"],
+      ["video", "1u1LG67UTN3Q9uTAiWbSQ7VE5uOveRmpQ"],
+      ["video", "1oVfMyskS-gE0IK8uSK64bdV0hRPMOw9F"]
     ]
   },
 
 
   kwench: {
     title: "Kwench Juice Cafe",
-    category: "Social Media · Creative",
+    category: "SOCIAL MEDIA · CREATIVE",
     description:
       "Social media and creative work for Kwench Juice Cafe, including visual content, campaign materials, digital marketing, and short-form video.",
-
-    tags: [
-      "Social Media",
-      "Creative",
-      "Graphic Design",
-      "Video"
-    ],
-
-    cover:
-      "1BjQfodMYmvb8uyAbE-h_NIYZZCWP5w1o",
+    cover: "1BjQfodMYmvb8uyAbE-h_NIYZZCWP5w1o",
 
     media: [
+      ["image", "1BjQfodMYmvb8uyAbE-h_NIYZZCWP5w1o"],
+      ["image", "1inkF8cQKoAc79BOoHSK4MVgOcdRaVnre"],
+      ["image", "1M23yNIWc8i8Z8j5aQOGw7-hz0Zt4979s"],
+      ["image", "1fdRw0VsewZRWg-pOrhmV4Yb-bG-IbUQE"],
+      ["image", "13gvBEWV93TrGvWBrOxPxhM_YAjLQJw6r"],
+      ["image", "1nP5A691jMtCMqvF1FuTRS4EoKqWcwkqz"],
+      ["image", "1Y6-pI24HGdTKgkAY0ue8hT7gv282YlWz"],
+      ["image", "1GhV_5bXTNpEwHdjiinHwi7KKexKVqYRV"],
 
-      {
-        type: "image",
-        id: "1BjQfodMYmvb8uyAbE-h_NIYZZCWP5w1o"
-      },
-      {
-        type: "image",
-        id: "1inkF8cQKoAc79BOoHSK4MVgOcdRaVnre"
-      },
-      {
-        type: "image",
-        id: "1M23yNIWc8i8Z8j5aQOGw7-hz0Zt4979s"
-      },
-      {
-        type: "image",
-        id: "1fdRw0VsewZRWg-pOrhmV4Yb-bG-IbUQE"
-      },
-      {
-        type: "image",
-        id: "13gvBEWV93TrGvWBrOxPxhM_YAjLQJw6r"
-      },
-      {
-        type: "image",
-        id: "1nP5A691jMtCMqvF1FuTRS4EoKqWcwkqz"
-      },
-      {
-        type: "image",
-        id: "1Y6-pI24HGdTKgkAY0ue8hT7gv282YlWz"
-      },
-      {
-        type: "image",
-        id: "1GhV_5bXTNpEwHdjiinHwi7KKexKVqYRV"
-      },
-
-      {
-        type: "video",
-        id: "1eMAD62knoG7Uyyn12QxxYjDNpz6bqlQJ"
-      },
-      {
-        type: "video",
-        id: "18x_ap_emNC5bQA-B0F56nhIITs2jnBcp"
-      },
-      {
-        type: "video",
-        id: "1ZpOjXO_hGEPe1upBEoiPiKHEgPTea8OJ"
-      },
-      {
-        type: "video",
-        id: "1ZwD3HOULtJy92z7tjiefWOgzyPnU2G_P"
-      }
+      ["video", "1eMAD62knoG7Uyyn12QxxYjDNpz6bqlQJ"],
+      ["video", "18x_ap_emNC5bQA-B0F56nhIITs2jnBcp"],
+      ["video", "1ZpOjXO_hGEPe1upBEoiPiKHEgPTea8OJ"],
+      ["video", "1ZwD3HOULtJy92z7tjiefWOgzyPnU2G_P"]
     ]
   },
 
 
   alta: {
     title: "Alta Anima",
-    category: "Marketing · Creative",
+    category: "MARKETING · CREATIVE",
     description:
       "Selected marketing and creative work developed for Alta Anima, including visual communication and campaign assets.",
-
-    tags: [
-      "Marketing",
-      "Creative",
-      "Graphic Design"
-    ],
-
-    cover:
-      "1lTUxkyFAPt8_gdKYJDNJF9SqVpzicRMa",
+    cover: "1lTUxkyFAPt8_gdKYJDNJF9SqVpzicRMa",
 
     media: [
-
-      {
-        type: "image",
-        id: "1lTUxkyFAPt8_gdKYJDNJF9SqVpzicRMa"
-      },
-      {
-        type: "image",
-        id: "1mrjuvoYDSzh-0-fvuvaqlavAADE9xu6h"
-      },
-      {
-        type: "image",
-        id: "1OMU-xiu4-uRwyEqNFH9-zqzctpI7l0H_"
-      },
-      {
-        type: "image",
-        id: "1-jnAnZVFrdvNkKn8MO4utQV8u73KCSee"
-      },
-      {
-        type: "image",
-        id: "1rHQdSaqwIqmyPnR69vwjR-b2omc70uWq"
-      },
-      {
-        type: "image",
-        id: "1tt_P_lT6mJczZd8VarHF8-sb4aUHCZ17"
-      },
-      {
-        type: "image",
-        id: "1f5uHDr4mUJpl9xVA24FW5NDm9OC-cYTC"
-      }
+      ["image", "1lTUxkyFAPt8_gdKYJDNJF9SqVpzicRMa"],
+      ["image", "1mrjuvoYDSzh-0-fvuvaqlavAADE9xu6h"],
+      ["image", "1OMU-xiu4-uRwyEqNFH9-zqzctpI7l0H_"],
+      ["image", "1-jnAnZVFrdvNkKn8MO4utQV8u73KCSee"],
+      ["image", "1rHQdSaqwIqmyPnR69vwjR-b2omc70uWq"],
+      ["image", "1tt_P_lT6mJczZd8VarHF8-sb4aUHCZ17"],
+      ["image", "1f5uHDr4mUJpl9xVA24FW5NDm9OC-cYTC"]
     ]
   },
 
 
   solour: {
     title: "Solour",
-    category: "Brand Strategy · Creative",
+    category: "BRAND STRATEGY · CREATIVE",
     description:
       "Academic brand development project for Solour, focused on positioning, audience, visual communication, and campaign development.",
-
-    tags: [
-      "Brand Strategy",
-      "Research",
-      "Creative",
-      "Marketing"
-    ],
-
-    cover:
-      "1qoD8imjaSILu9wVi-46-ORnRPgOJGTKk",
+    cover: "1qoD8imjaSILu9wVi-46-ORnRPgOJGTKk",
 
     media: [
-
-      {
-        type: "image",
-        id: "1qoD8imjaSILu9wVi-46-ORnRPgOJGTKk"
-      },
-      {
-        type: "image",
-        id: "1IiTa4hUHAAWFIS6nu9PkrKaHjcW-Dzmt"
-      },
-      {
-        type: "image",
-        id: "1_2febscGC-VMWCeZ1L1A6tAda2nElI5_"
-      },
-      {
-        type: "image",
-        id: "1SGnr5zjLr45yFaUB9fmqFaOKws4NKS-j"
-      },
-      {
-        type: "image",
-        id: "12ysk-3g-gdaCZWat50s-9j2KhpyubcOR"
-      },
-      {
-        type: "image",
-        id: "1s3SJeJe0VquBI0Ye5GOBkDEQKpayrmF0"
-      },
-      {
-        type: "image",
-        id: "1LApEqZ4eHB7OMUGggOVemGjmJyxsSAET"
-      }
+      ["image", "1qoD8imjaSILu9wVi-46-ORnRPgOJGTKk"],
+      ["image", "1IiTa4hUHAAWFIS6nu9PkrKaHjcW-Dzmt"],
+      ["image", "1_2febscGC-VMWCeZ1L1A6tAda2nElI5_"],
+      ["image", "1SGnr5zjLr45yFaUB9fmqFaOKws4NKS-j"],
+      ["image", "12ysk-3g-gdaCZWat50s-9j2KhpyubcOR"],
+      ["image", "1s3SJeJe0VquBI0Ye5GOBkDEQKpayrmF0"],
+      ["image", "1LApEqZ4eHB7OMUGggOVemGjmJyxsSAET"]
     ]
   },
 
 
   sm: {
     title: "SM Supermalls",
-    category: "Operations · Marketing · Events",
+    category: "OPERATIONS · MARKETING · EVENTS",
     description:
       "Operations internship experience supporting MSME monitoring, reporting, documentation, presentations, mall coordination, partnerships, and events.",
-
-    tags: [
-      "Operations",
-      "Reporting",
-      "Events",
-      "Coordination"
-    ],
-
+    cover: null,
     media: []
   },
 
 
   web3: {
     title: "Web3 & Community",
-    category: "Community Building · Partnerships",
+    category: "COMMUNITY BUILDING · PARTNERSHIPS",
     description:
       "Selected Web3 experience covering community management, Discord moderation, partnerships, community building, and digital marketing across multiple projects and brands.",
-
-    tags: [
-      "Community",
-      "Web3",
-      "Partnerships",
-      "Digital Marketing"
-    ],
-
+    cover: null,
     media: []
   }
 
@@ -317,104 +123,335 @@ const projects = {
 
 
 /* =========================================================
-   GOOGLE DRIVE HELPERS
+   GOOGLE DRIVE IMAGE
 ========================================================= */
 
 function driveImage(id) {
-  return `https://drive.google.com/thumbnail?id=${id}&sz=w1600`;
-}
-
-function drivePreview(id) {
-  return `https://drive.google.com/file/d/${id}/preview`;
+  return "https://drive.google.com/thumbnail?id=" + id + "&sz=w1600";
 }
 
 
 /* =========================================================
-   SET PROJECT COVER IMAGES
+   PROJECT MODAL CSS
 ========================================================= */
 
-function loadProjectCovers() {
+const modalCSS = document.createElement("style");
 
-  document
-    .querySelectorAll(".work-card[data-project]")
-    .forEach(card => {
+modalCSS.textContent = `
 
-      const projectKey = card.dataset.project;
-      const project = projects[projectKey];
-
-      if (!project || !project.cover) return;
-
-      const image = card.querySelector(".work-media img");
-
-      if (!image) return;
-
-      image.src = driveImage(project.cover);
-
-      image.loading = "lazy";
-
-      image.onerror = function () {
-
-        this.src =
-          `https://drive.google.com/uc?export=view&id=${project.cover}`;
-
-      };
-
-    });
+#apProjectModal {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: none;
+  font-family: inherit;
 }
+
+#apProjectModal.active {
+  display: block;
+}
+
+.ap-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 15, 20, 0.55);
+  backdrop-filter: blur(14px);
+}
+
+.ap-modal-window {
+  position: absolute;
+  top: 4vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1100px, 92vw);
+  height: 92vh;
+  overflow-y: auto;
+
+  background: rgba(255,255,255,0.96);
+  border: 1px solid rgba(255,255,255,0.8);
+  border-radius: 28px;
+
+  box-shadow:
+    0 30px 100px rgba(20,20,40,0.25);
+
+  padding: 42px;
+}
+
+.ap-modal-close {
+  position: sticky;
+  top: 0;
+  float: right;
+
+  width: 44px;
+  height: 44px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #111;
+  color: #fff;
+
+  font-size: 25px;
+  line-height: 1;
+
+  cursor: pointer;
+  z-index: 5;
+}
+
+.ap-modal-category {
+  margin-bottom: 12px;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+
+  color: #7c62ff;
+}
+
+.ap-modal-title {
+  margin: 0 70px 14px 0;
+
+  font-size: clamp(38px, 6vw, 72px);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+
+  color: #111;
+}
+
+.ap-modal-description {
+  max-width: 680px;
+
+  margin-bottom: 24px;
+
+  font-size: 16px;
+  line-height: 1.7;
+
+  color: #666;
+}
+
+.ap-modal-gallery-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 40px 0 18px;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+
+  color: #777;
+}
+
+.ap-modal-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.ap-modal-media {
+  position: relative;
+
+  aspect-ratio: 4 / 3;
+
+  overflow: hidden;
+
+  border-radius: 18px;
+
+  background: #eee;
+
+  cursor: pointer;
+}
+
+.ap-modal-media img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition: transform 0.45s ease;
+}
+
+.ap-modal-media:hover img {
+  transform: scale(1.04);
+}
+
+.ap-modal-media-overlay {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  align-items: flex-end;
+
+  padding: 18px;
+
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.5),
+    transparent 55%
+  );
+
+  color: #fff;
+
+  opacity: 0;
+
+  transition: opacity 0.3s ease;
+}
+
+.ap-modal-media:hover .ap-modal-media-overlay {
+  opacity: 1;
+}
+
+.ap-modal-video {
+  width: 100%;
+  height: 100%;
+
+  border: 0;
+
+  display: block;
+}
+
+.ap-modal-empty {
+  grid-column: 1 / -1;
+
+  padding: 80px 20px;
+
+  text-align: center;
+
+  background: #f4f4f5;
+  border-radius: 20px;
+}
+
+.ap-modal-empty strong {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-size: 20px;
+}
+
+.ap-modal-empty p {
+  margin: 0;
+
+  color: #777;
+}
+
+#apLightbox {
+  position: fixed;
+  inset: 0;
+
+  z-index: 100000;
+
+  display: none;
+
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0,0,0,0.9);
+
+  padding: 30px;
+}
+
+#apLightbox.active {
+  display: flex;
+}
+
+#apLightbox img {
+  max-width: 92vw;
+  max-height: 88vh;
+
+  object-fit: contain;
+
+  border-radius: 10px;
+}
+
+.ap-lightbox-close {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+
+  width: 48px;
+  height: 48px;
+
+  border: 0;
+  border-radius: 50%;
+
+  background: white;
+  color: #111;
+
+  font-size: 28px;
+
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+
+  .ap-modal-window {
+    top: 2vh;
+
+    width: 96vw;
+    height: 96vh;
+
+    padding: 25px 18px;
+
+    border-radius: 22px;
+  }
+
+  .ap-modal-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .ap-modal-title {
+    font-size: 42px;
+  }
+
+}
+
+`;
+
+document.head.appendChild(modalCSS);
 
 
 /* =========================================================
-   PROJECT MODAL
+   CREATE MODAL
 ========================================================= */
-
-let activeProject = null;
-
 
 function createProjectModal() {
 
-  if (document.getElementById("projectModalDynamic")) {
+  if (document.getElementById("apProjectModal")) {
     return;
   }
 
   const modal = document.createElement("div");
 
-  modal.id = "projectModalDynamic";
+  modal.id = "apProjectModal";
 
   modal.innerHTML = `
 
-    <div class="dynamic-modal-backdrop"></div>
+    <div class="ap-modal-backdrop"></div>
 
-    <div class="dynamic-modal">
+    <div class="ap-modal-window">
 
       <button
-        class="dynamic-modal-close"
+        class="ap-modal-close"
         type="button"
-        aria-label="Close project"
-      >
-        ×
-      </button>
+        aria-label="Close"
+      >×</button>
 
-      <div class="dynamic-modal-header">
+      <div class="ap-modal-category"></div>
 
-        <div class="dynamic-modal-category"></div>
+      <h2 class="ap-modal-title"></h2>
 
-        <h2 class="dynamic-modal-title"></h2>
+      <p class="ap-modal-description"></p>
 
-        <p class="dynamic-modal-description"></p>
-
-        <div class="dynamic-modal-tags"></div>
-
-      </div>
-
-      <div class="dynamic-gallery-heading">
-
+      <div class="ap-modal-gallery-label">
         <span>SELECTED WORK</span>
-
-        <small class="dynamic-gallery-count"></small>
-
+        <span class="ap-modal-count"></span>
       </div>
 
-      <div class="dynamic-project-gallery"></div>
+      <div class="ap-modal-gallery"></div>
 
     </div>
   `;
@@ -422,34 +459,14 @@ function createProjectModal() {
   document.body.appendChild(modal);
 
 
-  /* Close button */
-
   modal
-    .querySelector(".dynamic-modal-close")
+    .querySelector(".ap-modal-close")
     .addEventListener("click", closeProject);
 
 
-  /* Backdrop */
-
   modal
-    .querySelector(".dynamic-modal-backdrop")
+    .querySelector(".ap-modal-backdrop")
     .addEventListener("click", closeProject);
-
-
-  /* Escape key */
-
-  document.addEventListener("keydown", event => {
-
-    if (
-      event.key === "Escape" &&
-      modal.classList.contains("is-open")
-    ) {
-
-      closeProject();
-
-    }
-
-  });
 
 }
 
@@ -460,62 +477,42 @@ function createProjectModal() {
 
 function openProject(projectKey) {
 
-  const project = projects[projectKey];
+  const project = PROJECTS[projectKey];
 
   if (!project) {
-    console.warn("Project not found:", projectKey);
+    console.log("No project found:", projectKey);
     return;
   }
 
   createProjectModal();
 
-  activeProject = projectKey;
-
   const modal =
-    document.getElementById("projectModalDynamic");
+    document.getElementById("apProjectModal");
 
   const category =
-    modal.querySelector(".dynamic-modal-category");
+    modal.querySelector(".ap-modal-category");
 
   const title =
-    modal.querySelector(".dynamic-modal-title");
+    modal.querySelector(".ap-modal-title");
 
   const description =
-    modal.querySelector(".dynamic-modal-description");
-
-  const tags =
-    modal.querySelector(".dynamic-modal-tags");
+    modal.querySelector(".ap-modal-description");
 
   const gallery =
-    modal.querySelector(".dynamic-project-gallery");
+    modal.querySelector(".ap-modal-gallery");
 
   const count =
-    modal.querySelector(".dynamic-gallery-count");
+    modal.querySelector(".ap-modal-count");
 
 
-  category.textContent = project.category;
+  category.textContent =
+    project.category;
 
-  title.textContent = project.title;
+  title.textContent =
+    project.title;
 
-  description.textContent = project.description;
-
-
-  tags.innerHTML = "";
-
-  if (project.tags) {
-
-    project.tags.forEach(tag => {
-
-      const element =
-        document.createElement("span");
-
-      element.textContent = tag;
-
-      tags.appendChild(element);
-
-    });
-
-  }
+  description.textContent =
+    project.description;
 
 
   gallery.innerHTML = "";
@@ -525,9 +522,11 @@ function openProject(projectKey) {
 
     gallery.innerHTML = `
 
-      <div class="dynamic-no-media">
+      <div class="ap-modal-empty">
 
-        <strong>Project details coming together.</strong>
+        <strong>
+          Project details coming together.
+        </strong>
 
         <p>
           More selected work from this project will be added here.
@@ -537,129 +536,95 @@ function openProject(projectKey) {
 
     `;
 
+    count.textContent = "";
+
   } else {
 
-    project.media.forEach((item, index) => {
+    count.textContent =
+      project.media.length + " pieces";
 
-      const mediaItem =
-        createMediaItem(item, index);
 
-      gallery.appendChild(mediaItem);
+    project.media.forEach(
+      (media, index) => {
 
-    });
+        const type = media[0];
+        const id = media[1];
+
+        const item =
+          document.createElement("div");
+
+        item.className =
+          "ap-modal-media";
+
+
+        if (type === "image") {
+
+          item.innerHTML = `
+
+            <img
+              src="${driveImage(id)}"
+              alt="${project.title} project image ${index + 1}"
+              loading="lazy"
+            >
+
+            <div class="ap-modal-media-overlay">
+              <span>View image ↗</span>
+            </div>
+
+          `;
+
+
+          const image =
+            item.querySelector("img");
+
+
+          image.onerror = function() {
+
+            this.src =
+              "https://drive.google.com/uc?export=view&id=" + id;
+
+          };
+
+
+          item.addEventListener(
+            "click",
+            function() {
+              openLightbox(id);
+            }
+          );
+
+        }
+
+
+        if (type === "video") {
+
+          item.innerHTML = `
+
+            <iframe
+              class="ap-modal-video"
+              src="https://drive.google.com/file/d/${id}/preview"
+              allow="autoplay"
+              allowfullscreen
+              loading="lazy"
+              title="Project video"
+            ></iframe>
+
+          `;
+
+        }
+
+
+        gallery.appendChild(item);
+
+      }
+    );
 
   }
 
 
-  count.textContent =
-    project.media && project.media.length
-      ? `${project.media.length} pieces`
-      : "";
-
-
-  modal.classList.add("is-open");
+  modal.classList.add("active");
 
   document.body.style.overflow = "hidden";
-
-}
-
-
-/* =========================================================
-   CREATE MEDIA ITEM
-========================================================= */
-
-function createMediaItem(item, index) {
-
-  const wrapper =
-    document.createElement("div");
-
-  wrapper.className =
-    "dynamic-media-item";
-
-
-  /* IMAGE */
-
-  if (item.type === "image") {
-
-    wrapper.innerHTML = `
-
-      <img
-        src="${driveImage(item.id)}"
-        alt="Project work ${index + 1}"
-        loading="lazy"
-      >
-
-      <div class="dynamic-media-overlay">
-
-        <span>View image</span>
-
-      </div>
-
-      <div class="dynamic-media-number">
-        ${String(index + 1).padStart(2, "0")}
-      </div>
-
-    `;
-
-
-    const image =
-      wrapper.querySelector("img");
-
-
-    image.onerror = function () {
-
-      this.src =
-        `https://drive.google.com/uc?export=view&id=${item.id}`;
-
-    };
-
-
-    wrapper.addEventListener("click", () => {
-
-      openImageLightbox(item.id);
-
-    });
-
-  }
-
-
-  /* VIDEO */
-
-  if (item.type === "video") {
-
-    wrapper.innerHTML = `
-
-      <div class="dynamic-video-thumbnail">
-
-        <iframe
-          src="${drivePreview(item.id)}"
-          allow="autoplay"
-          loading="lazy"
-          title="Project video"
-        ></iframe>
-
-        <div class="dynamic-video-overlay">
-
-          <div class="dynamic-play">
-            ▶
-          </div>
-
-          <span>Watch video</span>
-
-        </div>
-
-      </div>
-
-      <div class="dynamic-media-number">
-        ${String(index + 1).padStart(2, "0")}
-      </div>
-
-    `;
-
-  }
-
-
-  return wrapper;
 
 }
 
@@ -671,11 +636,11 @@ function createMediaItem(item, index) {
 function closeProject() {
 
   const modal =
-    document.getElementById("projectModalDynamic");
+    document.getElementById("apProjectModal");
 
   if (!modal) return;
 
-  modal.classList.remove("is-open");
+  modal.classList.remove("active");
 
   document.body.style.overflow = "";
 
@@ -683,112 +648,274 @@ function closeProject() {
 
 
 /* =========================================================
-   IMAGE LIGHTBOX
+   LIGHTBOX
 ========================================================= */
 
-function openImageLightbox(id) {
+function createLightbox() {
 
-  let lightbox =
-    document.getElementById("dynamicLightbox");
-
-
-  if (!lightbox) {
-
-    lightbox =
-      document.createElement("div");
-
-    lightbox.id =
-      "dynamicLightbox";
-
-    lightbox.innerHTML = `
-
-      <div class="dynamic-lightbox-backdrop"></div>
-
-      <button
-        class="dynamic-lightbox-close"
-        type="button"
-      >
-        ×
-      </button>
-
-      <img
-        class="dynamic-lightbox-image"
-        alt="Project image"
-      >
-
-    `;
-
-    document.body.appendChild(lightbox);
-
-
-    lightbox
-      .querySelector(".dynamic-lightbox-backdrop")
-      .addEventListener("click", closeLightbox);
-
-
-    lightbox
-      .querySelector(".dynamic-lightbox-close")
-      .addEventListener("click", closeLightbox);
-
+  if (document.getElementById("apLightbox")) {
+    return;
   }
 
+  const lightbox =
+    document.createElement("div");
 
-  const image =
-    lightbox.querySelector(".dynamic-lightbox-image");
+  lightbox.id =
+    "apLightbox";
 
-  image.src = driveImage(id);
+  lightbox.innerHTML = `
 
-  image.onerror = function () {
+    <button
+      class="ap-lightbox-close"
+      type="button"
+    >×</button>
 
-    this.src =
-      `https://drive.google.com/uc?export=view&id=${id}`;
+    <img
+      alt="Project image"
+    >
 
-  };
+  `;
+
+  document.body.appendChild(lightbox);
 
 
-  lightbox.classList.add("is-open");
+  lightbox
+    .querySelector(".ap-lightbox-close")
+    .addEventListener(
+      "click",
+      closeLightbox
+    );
+
+
+  lightbox.addEventListener(
+    "click",
+    function(event) {
+
+      if (event.target === lightbox) {
+        closeLightbox();
+      }
+
+    }
+  );
 
 }
 
 
-/* =========================================================
-   CLOSE LIGHTBOX
-========================================================= */
+function openLightbox(id) {
+
+  createLightbox();
+
+  const lightbox =
+    document.getElementById("apLightbox");
+
+  const image =
+    lightbox.querySelector("img");
+
+  image.src =
+    driveImage(id);
+
+  image.onerror = function() {
+
+    this.src =
+      "https://drive.google.com/uc?export=view&id=" + id;
+
+  };
+
+  lightbox.classList.add("active");
+
+}
+
 
 function closeLightbox() {
 
   const lightbox =
-    document.getElementById("dynamicLightbox");
+    document.getElementById("apLightbox");
 
   if (!lightbox) return;
 
-  lightbox.classList.remove("is-open");
+  lightbox.classList.remove("active");
 
 }
 
 
 /* =========================================================
-   PROJECT CARD CLICK
+   IMPORTANT:
+   UNIVERSAL PROJECT CLICK HANDLER
 ========================================================= */
 
-function setupProjectCards() {
+document.addEventListener(
+  "click",
+  function(event) {
+
+    /*
+      Look for the closest project card
+      from whatever element was clicked.
+    */
+
+    const card =
+      event.target.closest(
+        ".work-card[data-project]"
+      );
+
+
+    if (!card) {
+      return;
+    }
+
+
+    const projectKey =
+      card.getAttribute("data-project");
+
+
+    if (!projectKey) {
+      return;
+    }
+
+
+    /*
+      Don't interfere with navigation
+      inside the project modal itself.
+    */
+
+    if (
+      event.target.closest(
+        "#apProjectModal"
+      )
+    ) {
+      return;
+    }
+
+
+    event.preventDefault();
+    event.stopPropagation();
+
+
+    openProject(projectKey);
+
+  },
+  true
+);
+
+
+/* =========================================================
+   ALSO SUPPORT VIEW PROJECT ELEMENTS
+========================================================= */
+
+document.addEventListener(
+  "click",
+  function(event) {
+
+    const viewButton =
+      event.target.closest(
+        ".work-overlay, .work-overlay *, [data-view-project]"
+      );
+
+
+    if (!viewButton) {
+      return;
+    }
+
+
+    const card =
+      viewButton.closest(
+        ".work-card[data-project]"
+      );
+
+
+    if (!card) {
+      return;
+    }
+
+
+    const projectKey =
+      card.getAttribute("data-project");
+
+
+    if (!projectKey) {
+      return;
+    }
+
+
+    event.preventDefault();
+    event.stopPropagation();
+
+
+    openProject(projectKey);
+
+  },
+  true
+);
+
+
+/* =========================================================
+   ESCAPE KEY
+========================================================= */
+
+document.addEventListener(
+  "keydown",
+  function(event) {
+
+    if (event.key === "Escape") {
+
+      closeLightbox();
+      closeProject();
+
+    }
+
+  }
+);
+
+
+/* =========================================================
+   LOAD COVER IMAGES
+========================================================= */
+
+function loadCoverImages() {
 
   document
-    .querySelectorAll(".work-card[data-project]")
+    .querySelectorAll(
+      ".work-card[data-project]"
+    )
     .forEach(card => {
 
-      card.addEventListener("click", event => {
+      const key =
+        card.getAttribute("data-project");
 
-        event.preventDefault();
+      const project =
+        PROJECTS[key];
 
-        event.stopPropagation();
 
-        const projectKey =
-          card.dataset.project;
+      if (
+        !project ||
+        !project.cover
+      ) {
+        return;
+      }
 
-        openProject(projectKey);
 
-      });
+      const image =
+        card.querySelector(
+          "img"
+        );
+
+
+      if (!image) {
+        return;
+      }
+
+
+      image.src =
+        driveImage(project.cover);
+
+
+      image.onerror =
+        function() {
+
+          this.src =
+            "https://drive.google.com/uc?export=view&id=" +
+            project.cover;
+
+        };
 
     });
 
@@ -802,169 +929,69 @@ function setupProjectCards() {
 function setupSmoothScroll() {
 
   document
-    .querySelectorAll('a[href^="#"]')
+    .querySelectorAll(
+      'a[href^="#"]'
+    )
     .forEach(link => {
 
-      link.addEventListener("click", event => {
+      link.addEventListener(
+        "click",
+        function(event) {
 
-        const targetId =
-          link.getAttribute("href");
-
-        if (
-          !targetId ||
-          targetId === "#"
-        ) {
-          return;
-        }
-
-        const target =
-          document.querySelector(targetId);
-
-        if (!target) return;
-
-        event.preventDefault();
-
-        target.scrollIntoView({
-          behavior: "smooth",
-          block: "start"
-        });
-
-      });
-
-    });
-
-}
+          const href =
+            this.getAttribute("href");
 
 
-/* =========================================================
-   HEADER SCROLL EFFECT
-========================================================= */
-
-function setupHeaderScroll() {
-
-  const header =
-    document.querySelector(".site-header");
-
-  if (!header) return;
-
-  function updateHeader() {
-
-    if (window.scrollY > 30) {
-
-      header.classList.add("is-scrolled");
-
-    } else {
-
-      header.classList.remove("is-scrolled");
-
-    }
-
-  }
-
-  updateHeader();
-
-  window.addEventListener(
-    "scroll",
-    updateHeader,
-    { passive: true }
-  );
-
-}
-
-
-/* =========================================================
-   REVEAL ANIMATION
-========================================================= */
-
-function setupReveal() {
-
-  const elements =
-    document.querySelectorAll(".reveal");
-
-  if (!elements.length) return;
-
-
-  /*
-    We keep the animation subtle.
-    If IntersectionObserver is unavailable,
-    everything remains visible.
-  */
-
-  if (!("IntersectionObserver" in window)) {
-
-    elements.forEach(element => {
-
-      element.classList.add("visible");
-
-    });
-
-    return;
-
-  }
-
-
-  const observer =
-    new IntersectionObserver(
-      entries => {
-
-        entries.forEach(entry => {
-
-          if (entry.isIntersecting) {
-
-            entry.target.classList.add("visible");
-
-            observer.unobserve(entry.target);
-
+          if (
+            !href ||
+            href === "#"
+          ) {
+            return;
           }
 
-        });
 
-      },
-      {
-        threshold: 0.08
-      }
-    );
+          const target =
+            document.querySelector(
+              href
+            );
 
 
-  elements.forEach(element => {
+          if (!target) {
+            return;
+          }
 
-    observer.observe(element);
 
-  });
+          event.preventDefault();
+
+
+          target.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
+
+        }
+      );
+
+    });
 
 }
 
 
 /* =========================================================
-   GLOBAL ESCAPE KEY
+   START
 ========================================================= */
 
-document.addEventListener("keydown", event => {
+window.addEventListener(
+  "load",
+  function() {
 
-  if (event.key !== "Escape") return;
-
-  closeLightbox();
-
-});
-
-
-/* =========================================================
-   INITIALIZE
-========================================================= */
-
-document.addEventListener(
-  "DOMContentLoaded",
-  () => {
-
-    loadProjectCovers();
-
-    setupProjectCards();
+    loadCoverImages();
 
     setupSmoothScroll();
 
-    setupHeaderScroll();
-
-    setupReveal();
+    console.log(
+      "Angelo Pacya portfolio loaded successfully."
+    );
 
   }
 );
