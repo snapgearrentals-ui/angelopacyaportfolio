@@ -83,7 +83,6 @@ button {
 
 .container {
     width: min(1180px, 90%);
-
     margin: 0 auto;
 }
 
@@ -809,31 +808,27 @@ footer {
 }
 
 
-/* MODAL BACKGROUND */
-
 .project-modal-overlay {
     position: absolute;
 
     inset: 0;
 
-    background: rgba(2, 5, 12, 0.82);
+    background: rgba(2, 5, 12, 0.84);
 
-    backdrop-filter: blur(14px);
+    backdrop-filter: blur(16px);
 
-    -webkit-backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(16px);
 }
 
-
-/* MODAL WINDOW */
 
 .project-modal-content {
     position: relative;
 
     z-index: 2;
 
-    width: min(900px, 100%);
+    width: min(1100px, 100%);
 
-    max-height: 85vh;
+    max-height: 90vh;
 
     overflow-y: auto;
 
@@ -842,17 +837,17 @@ footer {
     background:
         radial-gradient(
             circle at 90% 0%,
-            rgba(77, 141, 255, 0.15),
+            rgba(77, 141, 255, 0.16),
             transparent 35%
         ),
-        rgba(10, 15, 28, 0.96);
+        rgba(10, 15, 28, 0.97);
 
     border: 1px solid rgba(255, 255, 255, 0.14);
 
     border-radius: 28px;
 
     box-shadow:
-        0 30px 100px rgba(0, 0, 0, 0.5);
+        0 40px 120px rgba(0, 0, 0, 0.6);
 
     transform:
         translateY(25px)
@@ -870,13 +865,18 @@ footer {
 }
 
 
-/* CLOSE BUTTON */
+/* ========================================
+   MODAL CLOSE
+======================================== */
 
 .project-modal-close {
-    position: absolute;
+    position: sticky;
 
-    top: 20px;
-    right: 22px;
+    float: right;
+
+    top: 0;
+
+    z-index: 20;
 
     width: 42px;
     height: 42px;
@@ -885,7 +885,7 @@ footer {
 
     border: 1px solid rgba(255, 255, 255, 0.12);
 
-    background: rgba(255, 255, 255, 0.06);
+    background: rgba(255, 255, 255, 0.07);
 
     color: white;
 
@@ -894,17 +894,25 @@ footer {
     cursor: pointer;
 
     transition: 0.25s ease;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
 }
 
 
 .project-modal-close:hover {
-    background: rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.14);
 
     transform: rotate(90deg);
 }
 
 
-/* MODAL CATEGORY */
+/* ========================================
+   MODAL TEXT
+======================================== */
 
 .project-modal-category {
     color: var(--blue-light);
@@ -921,20 +929,18 @@ footer {
 }
 
 
-/* MODAL TITLE */
-
 .project-modal-title {
-    font-size: clamp(38px, 5vw, 64px);
+    font-size: clamp(40px, 5vw, 68px);
 
     line-height: 1;
 
-    letter-spacing: -2px;
+    letter-spacing: -3px;
 
     margin-bottom: 20px;
+
+    padding-right: 50px;
 }
 
-
-/* MODAL DESCRIPTION */
 
 .project-modal-description {
     color: var(--muted);
@@ -943,16 +949,131 @@ footer {
 
     line-height: 1.7;
 
-    max-width: 700px;
+    max-width: 760px;
 
     margin-bottom: 40px;
 }
 
 
-/* MODAL CONTENT AREA */
+/* ========================================
+   PROJECT CONTENT AREA
+======================================== */
 
 .project-modal-content-area {
-    min-height: 220px;
+    width: 100%;
+
+    min-height: 300px;
+
+    padding: 0;
+
+    border-radius: 20px;
+
+    color: var(--muted);
+
+    text-align: center;
+}
+
+
+/* ========================================
+   DRIVE MEDIA GRID
+======================================== */
+
+.project-media-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 18px;
+
+    width: 100%;
+}
+
+
+/* ========================================
+   DRIVE MEDIA CARD
+======================================== */
+
+.project-media-card {
+    position: relative;
+
+    width: 100%;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    background: #080c15;
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    box-shadow:
+        0 15px 45px rgba(0, 0, 0, 0.3);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+.project-media-card:hover {
+    transform: translateY(-4px);
+
+    border-color: rgba(117, 169, 255, 0.35);
+}
+
+
+/* ========================================
+   DRIVE FOLDER
+======================================== */
+
+.project-media-folder {
+    height: 360px;
+}
+
+
+.project-media-folder iframe {
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    border: none;
+
+    background: white;
+}
+
+
+/* ========================================
+   DRIVE VIDEO
+======================================== */
+
+.project-media-video {
+    grid-column: span 2;
+
+    aspect-ratio: 16 / 9;
+}
+
+
+.project-media-video iframe {
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    border: none;
+
+    background: #000;
+}
+
+
+/* ========================================
+   EMPTY PROJECT STATE
+======================================== */
+
+.project-empty-state {
+    min-height: 260px;
 
     display: flex;
 
@@ -964,18 +1085,21 @@ footer {
 
     border-radius: 20px;
 
-    border: 1px dashed rgba(255, 255, 255, 0.15);
+    border: 1px dashed rgba(255, 255, 255, 0.14);
 
     background: rgba(255, 255, 255, 0.025);
+}
 
+
+.project-empty-state p {
     color: var(--muted);
 
-    text-align: center;
+    font-size: 14px;
 }
 
 
 /* ========================================
-   SCROLLBAR
+   MODAL SCROLLBAR
 ======================================== */
 
 .project-modal-content::-webkit-scrollbar {
@@ -995,9 +1119,33 @@ footer {
 }
 
 
+.project-modal-content::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+
 /* ========================================
    RESPONSIVE
 ======================================== */
+
+@media (max-width: 900px) {
+
+    .project-media-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .project-media-video {
+        grid-column: span 1;
+    }
+
+
+    .project-media-folder {
+        height: 340px;
+    }
+
+}
+
 
 @media (max-width: 800px) {
 
@@ -1053,14 +1201,14 @@ footer {
 
 
     .project-modal {
-        padding: 15px;
+        padding: 10px;
     }
 
 
     .project-modal-content {
-        padding: 35px 24px;
+        padding: 30px 18px;
 
-        max-height: 90vh;
+        max-height: 94vh;
 
         border-radius: 22px;
     }
@@ -1068,18 +1216,32 @@ footer {
 
     .project-modal-title {
         font-size: 38px;
+
+        letter-spacing: -2px;
+
+        padding-right: 35px;
     }
 
 
     .project-modal-description {
         font-size: 14px;
+
+        margin-bottom: 28px;
     }
 
 
-    .project-modal-content-area {
-        padding: 25px;
+    .project-media-grid {
+        gap: 14px;
+    }
 
-        min-height: 180px;
+
+    .project-media-folder {
+        height: 300px;
+    }
+
+
+    .project-media-video {
+        aspect-ratio: 16 / 10;
     }
 
 }
