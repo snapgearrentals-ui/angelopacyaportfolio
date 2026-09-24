@@ -1,1049 +1,820 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+/* =========================================================
+   ANGELO R. PACYA
+   PORTFOLIO INTERACTIONS
+========================================================= */
 
-  <title>Angelo R. Pacya | Communication • Marketing • Creative</title>
+document.addEventListener("DOMContentLoaded", () => {
 
-  <meta
-    name="description"
-    content="Portfolio of Angelo R. Pacya, a Communication graduate and digital marketing creative specializing in brand development, social media, creative production, community building, and partnerships."
-  >
+  /* =======================================================
+     PROJECT DATA
+  ======================================================= */
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  const projects = {
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
-    rel="stylesheet"
-  >
+    footlab: {
+      category: "Healthcare • Marketing • Brand Development",
 
-  <link rel="stylesheet" href="style.css">
-</head>
+      title: "FOOTLAB",
 
-<body>
+      description:
+        "Marketing work across digital content, social media, SEO, campaigns, partnerships, events, analytics, and physical marketing for a custom orthotics brand.",
 
-  <!-- =========================
-       NAVIGATION
-  ========================== -->
+      media: [
 
-  <header class="site-header">
-    <div class="container nav-container">
+        {
+          type: "image",
+          src: "https://drive.google.com/thumbnail?id=1HLJB4XqchXSQvDGCxOOdJySWNg17w2f6&sz=w2000",
+          alt: "FOOTLAB campaign content"
+        },
 
-      <a href="#home" class="brand">
-        <span class="brand-mark">AP</span>
-        <span class="brand-name">Angelo Pacya</span>
-      </a>
+        {
+          type: "image",
+          src: "https://drive.google.com/thumbnail?id=1OaM732spQtU9wMFfn7Kn0tkZLJobtpi2&sz=w2000",
+          alt: "FOOTLAB social media content"
+        },
 
-      <nav class="main-nav">
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-      </nav>
+        {
+          type: "image",
+          src: "https://drive.google.com/thumbnail?id=1_nwetHwOkZEZJyfEn8FE38BRAIcsU6Ox&sz=w2000",
+          alt: "FOOTLAB marketing creative"
+        },
 
-      <a href="#contact" class="nav-cta">
-        Let's talk
-        <span>↗</span>
-      </a>
+        {
+          type: "image",
+          src: "https://drive.google.com/thumbnail?id=1x_aTEzidyCU-5I0D6gRdlVDCaKbLjzDv&sz=w2000",
+          alt: "FOOTLAB campaign"
+        },
 
-    </div>
-  </header>
+        {
+          type: "image",
+          src: "https://drive.google.com/thumbnail?id=19--9sx60VpOEDs1nDhTFQPNJ-wkktfQ0&sz=w2000",
+          alt: "FOOTLAB content"
+        },
+
+        {
+          type: "image",
+          src: "https://drive.google.com/thumbnail?id=1axbRYiS-pHxghEPdoWwC3gZjIpuZS6ON&sz=w2000",
+          alt: "FOOTLAB event content"
+        },
+
+        {
+          type: "image",
+          src: "https://drive.google.com/thumbnail?id=1Q7BcKjfB6NjxOCQuFDyTprGpEuxmc0EZ&sz=w2000",
+          alt: "FOOTLAB social media"
+        },
+
+        {
+          type: "image",
+          src: "https://drive.google.com/thumbnail?id=1aWISvTciZ8Ptlfv_QeEgx5URpBNd_x5N&sz=w2000",
+          alt: "FOOTLAB campaign content"
+        },
+
+        {
+          type: "image",
+          src: "https://drive.google.com/thumbnail?id=1J2PfnMeRqi7lNCK04ELez0KYlkqdtxET&sz=w2000",
+          alt: "FOOTLAB event marketing"
+        },
+
+        {
+          type: "image",
+          src: "https://drive.google.com/thumbnail?id=15hOLxhFsXBAJU8j2YTK00-pk0a9uHSLt&sz=w2000",
+          alt: "FOOTLAB event creative"
+        },
+
+        {
+          type: "image",
+          src: "https://drive.google.com/thumbnail?id=1QhkCwEO2bUWJXDTGPGCt6uVZluTR-PLi&sz=w2000",
+          alt: "FOOTLAB marketing material"
+        },
+
+        {
+          type: "image",
+          src: "https://drive.google.com/thumbnail?id=17W3x-3b2rGylh_NFW16TEmwyFtCwjjYp&sz=w2000",
+          alt: "FOOTLAB campaign"
+        },
+
+        {
+          type: "image",
+          src: "https://drive.google.com/thumbnail?id=10bmlvX6h72FEIm4UT4-6DFfSKyPSWNWJ&sz=w2000",
+          alt: "FOOTLAB content"
+        },
+
+        {
+          type: "image",
+          src: "https://drive.google.com/thumbnail?id=1j1PXhsh6vr72XrSFDcudS1Qh1KwsyfrO&sz=w2000",
+          alt: "FOOTLAB marketing creative"
+        },
+
+        {
+          type: "image",
+          src: "https://drive.google.com/thumbnail?id=1dbtq_MWQ4Xmgt7x4e_nM9HTh-FsGPh3c&sz=w2000",
+          alt: "FOOTLAB event content"
+        },
+
+        {
+          type: "image",
+          src: "https://drive.google.com/thumbnail?id=1hfAlw4ffECSq53BEcktUnAuOathaxbpp&sz=w2000",
+          alt: "FOOTLAB campaign content"
+        },
+
+        {
+          type: "video",
+          src: "https://drive.google.com/file/d/1IKmOuyCaemAlA2AmaPygY_wx9Gdlc1Vs/preview",
+          title: "FOOTLAB Video Content"
+        },
+
+        {
+          type: "video",
+          src: "https://drive.google.com/file/d/1u1LG67UTN3Q9uTAiWbSQ7VE5uOveRmpQ/preview",
+          title: "FOOTLAB Campaign Video"
+        },
+
+        {
+          type: "video",
+          src: "https://drive.google.com/file/d/1oVfMyskS-gE0IK8uSK64bdV0hRPMOw9F/preview",
+          title: "FOOTLAB Social Media Video"
+        }
+
+      ]
+    },
 
 
-  <main>
+    kwench: {
+      category: "Food & Beverage • Social Media • Creative",
 
-    <!-- =========================
-         HERO
-    ========================== -->
+      title: "Kwench Juice Cafe",
 
-    <section class="hero section" id="home">
+      description:
+        "Social media and creative work for a food and beverage brand, covering content creation, digital marketing, visual communication, and brand storytelling.",
 
-      <div class="container hero-grid">
+      media: [
 
-        <div class="hero-content">
+        {
+          type: "image",
+          src: "https://drive.google.com/thumbnail?id=1BjQfodMYmvb8uyAbE-h_NIYZZCWP5w1o&sz=w2000",
+          alt: "Kwench Juice Cafe creative"
+        },
 
-          <div class="eyebrow">
-            <span class="eyebrow-dot"></span>
-            Communication • Marketing • Creative
-          </div>
+        {
+          type: "image",
+          src: "https://drive.google.com/thumbnail?id=1inkF8cQKoAc79BOoHSK4MVgOcdRaVnre&sz=w2000",
+          alt: "Kwench Juice Cafe content"
+        },
 
-          <h1>
-            I build
-            <span>brands,</span>
-            campaigns &
-            <span>digital experiences.</span>
-          </h1>
+        {
+          type: "image",
+          src: "https://drive.google.com/thumbnail?id=1M23yNIWc8i8Z8j5aQOGw7-hz0Zt4979s&sz=w2000",
+          alt: "Kwench Juice Cafe marketing"
+        },
 
-          <p class="hero-description">
-            I'm Angelo R. Pacya, a Communication graduate and marketing creative
-            working across digital strategy, social media, brand development,
-            creative production, community building, and partnerships.
-          </p>
+        {
+          type: "image",
+          src: "https://drive.google.com/thumbnail?id=1fdRw0VsewZRWg-pOrhmV4Yb-bG-IbUQE&sz=w2000",
+          alt: "Kwench Juice Cafe social media"
+        },
 
-          <div class="hero-actions">
-            <a href="#work" class="button button-primary">
-              View my work
-              <span>↓</span>
-            </a>
+        {
+          type: "image",
+          src: "https://drive.google.com/thumbnail?id=13gvBEWV93TrGvWBrOxPxhM_YAjLQJw6r&sz=w2000",
+          alt: "Kwench Juice Cafe campaign"
+        },
 
-            <a href="#contact" class="button button-secondary">
-              Let's connect
-              <span>↗</span>
-            </a>
-          </div>
+        {
+          type: "image",
+          src: "https://drive.google.com/thumbnail?id=1nP5A691jMtCMqvF1FuTRS4EoKqWcwkqz&sz=w2000",
+          alt: "Kwench Juice Cafe content"
+        },
 
-          <div class="hero-proof">
+        {
+          type: "image",
+          src: "https://drive.google.com/thumbnail?id=1Y6-pI24HGdTKgkAY0ue8hT7gv282YlWz&sz=w2000",
+          alt: "Kwench Juice Cafe creative"
+        },
 
-            <div class="proof-item">
-              <strong>30+</strong>
-              <span>Brands & projects</span>
-            </div>
+        {
+          type: "image",
+          src: "https://drive.google.com/thumbnail?id=1GhV_5bXTNpEwHdjiinHwi7KKexKVqYRV&sz=w2000",
+          alt: "Kwench Juice Cafe marketing"
+        },
 
-            <div class="proof-divider"></div>
+        {
+          type: "video",
+          src: "https://drive.google.com/file/d/1eMAD62knoG7Uyyn12QxxYjDNpz6bqlQJ/preview",
+          title: "Kwench Social Media Video"
+        },
 
-            <div class="proof-item">
-              <strong>Summa</strong>
-              <span>Cum Laude</span>
-            </div>
+        {
+          type: "video",
+          src: "https://drive.google.com/file/d/18x_ap_emNC5bQA-B0F56nhIITs2jnBcp/preview",
+          title: "Kwench Creative Video"
+        },
 
-            <div class="proof-divider"></div>
+        {
+          type: "video",
+          src: "https://drive.google.com/file/d/1ZpOjXO_hGEPe1upBEoiPiKHEgPTea8OJ/preview",
+          title: "Kwench Campaign Video"
+        },
 
-            <div class="proof-item">
-              <strong>16</strong>
-              <span>Started working at</span>
-            </div>
+        {
+          type: "video",
+          src: "https://drive.google.com/file/d/1ZwD3HOULtJy92z7tjiefWOgzyPnU2G_P/preview",
+          title: "Kwench Social Content"
+        }
 
-          </div>
+      ]
+    },
 
-        </div>
+
+    alta: {
+      category: "Marketing • Creative",
+
+      title: "Alta Anima",
+
+      description:
+        "Selected marketing and creative work supporting brand communication, visual content, and campaign materials.",
+
+      media: [
+
+        {
+          type: "image",
+          src: "https://drive.google.com/thumbnail?id=1lTUxkyFAPt8_gdKYJDNJF9SqVpzicRMa&sz=w2000",
+          alt: "Alta Anima creative"
+        },
+
+        {
+          type: "image",
+          src: "https://drive.google.com/thumbnail?id=1mrjuvoYDSzh-0-fvuvaqlavAADE9xu6h&sz=w2000",
+          alt: "Alta Anima marketing"
+        },
+
+        {
+          type: "image",
+          src: "https://drive.google.com/thumbnail?id=1OMU-xiu4-uRwyEqNFH9-zqzctpI7l0H_&sz=w2000",
+          alt: "Alta Anima creative work"
+        },
+
+        {
+          type: "image",
+          src: "https://drive.google.com/thumbnail?id=1-jnAnZVFrdvNkKn8MO4utQV8u73KCSee&sz=w2000",
+          alt: "Alta Anima visual"
+        },
+
+        {
+          type: "image",
+          src: "https://drive.google.com/thumbnail?id=1rHQdSaqwIqmyPnR69vwjR-b2omc70uWq&sz=w2000",
+          alt: "Alta Anima campaign"
+        },
+
+        {
+          type: "image",
+          src: "https://drive.google.com/thumbnail?id=1tt_P_lT6mJczZd8VarHF8-sb4aUHCZ17&sz=w2000",
+          alt: "Alta Anima marketing material"
+        },
+
+        {
+          type: "image",
+          src: "https://drive.google.com/thumbnail?id=1f5uHDr4mUJpl9xVA24FW5NDm9OC-cYTC&sz=w2000",
+          alt: "Alta Anima creative content"
+        }
+
+      ]
+    },
 
 
-        <div class="hero-visual">
+    solour: {
+      category: "Brand Strategy • Research • Creative",
 
-          <div class="hero-image hero-image-main">
-            <img
-              src="https://drive.google.com/thumbnail?id=1HLJB4XqchXSQvDGCxOOdJySWNg17w2f6&sz=w1600"
-              alt="FOOTLAB marketing and campaign work"
-            >
-          </div>
+      title: "Solour",
 
-          <div class="hero-image hero-image-small">
-            <img
-              src="https://drive.google.com/thumbnail?id=1BjQfodMYmvb8uyAbE-h_NIYZZCWP5w1o&sz=w1200"
-              alt="Kwench Juice Cafe creative work"
-            >
-          </div>
+      description:
+        "A thesis-driven marketing project for a lip-care sunbalm. The project explored brand positioning, target audience research, visual identity, creative direction, and marketing strategy.",
 
-          <div class="hero-note">
-            <span>Currently</span>
-            <strong>Building meaningful<br>brand experiences.</strong>
-          </div>
+      media: [
 
-          <div class="hero-number">01</div>
+        {
+          type: "image",
+          src: "https://drive.google.com/thumbnail?id=1qoD8imjaSILu9wVi-46-ORnRPgOJGTKk&sz=w2000",
+          alt: "Solour branding"
+        },
 
-        </div>
+        {
+          type: "image",
+          src: "https://drive.google.com/thumbnail?id=1IiTa4hUHAAWFIS6nu9PkrKaHjcW-Dzmt&sz=w2000",
+          alt: "Solour brand creative"
+        },
+
+        {
+          type: "image",
+          src: "https://drive.google.com/thumbnail?id=1_2febscGC-VMWCeZ1L1A6tAda2nElI5_&sz=w2000",
+          alt: "Solour marketing"
+        },
+
+        {
+          type: "image",
+          src: "https://drive.google.com/thumbnail?id=1SGnr5zjLr45yFaUB9fmqFaOKws4NKS-j&sz=w2000",
+          alt: "Solour brand cover"
+        },
+
+        {
+          type: "image",
+          src: "https://drive.google.com/thumbnail?id=12ysk-3g-gdaCZWat50s-9j2KhpyubcOR&sz=w2000",
+          alt: "Solour campaign cover"
+        },
+
+        {
+          type: "image",
+          src: "https://drive.google.com/thumbnail?id=1s3SJeJe0VquBI0Ye5GOBkDEQKpayrmF0&sz=w2000",
+          alt: "Solour product mockup"
+        },
+
+        {
+          type: "image",
+          src: "https://drive.google.com/thumbnail?id=1LApEqZ4eHB7OMUGggOVemGjmJyxsSAET&sz=w2000",
+          alt: "Solour product presentation"
+        }
+
+      ]
+    },
+
+
+    sm: {
+      category: "Retail • Operations • Partnerships",
+
+      title: "SM Supermalls",
+
+      description:
+        "Operations internship experience under the MSME team, working across monitoring, reporting, documentation, presentations, mall coordination, partnership materials, events, and business initiatives.",
+
+      media: []
+    },
+
+
+    web3: {
+      category: "Community • Partnerships • Digital",
+
+      title: "Web3 & Cryptocurrency",
+
+      description:
+        "Early professional experience in Web3, working across community management, Discord moderation, community building, partnerships, strategic communication, and digital communities.",
+
+      media: []
+    }
+
+  };
+
+
+  /* =======================================================
+     CREATE MODAL
+  ======================================================= */
+
+  const modalHTML = `
+    <div class="project-modal" id="projectModal">
+
+      <div class="project-modal-overlay"></div>
+
+      <div class="project-modal-content">
+
+        <button
+          class="project-modal-close"
+          type="button"
+          aria-label="Close project"
+        >
+          ×
+        </button>
+
+        <div class="project-modal-category"></div>
+
+        <h2 class="project-modal-title"></h2>
+
+        <p class="project-modal-description"></p>
+
+        <div class="project-modal-content-area"></div>
 
       </div>
 
-    </section>
+    </div>
 
 
-    <!-- =========================
-         INTRO STRIP
-    ========================== -->
+    <div class="image-lightbox" id="imageLightbox">
 
-    <section class="intro-strip">
+      <div class="image-lightbox-overlay"></div>
 
-      <div class="container intro-strip-inner">
+      <button
+        class="image-lightbox-close"
+        type="button"
+        aria-label="Close image"
+      >
+        ×
+      </button>
 
+      <img
+        class="image-lightbox-image"
+        src=""
+        alt=""
+      >
+
+    </div>
+  `;
+
+  document.body.insertAdjacentHTML("beforeend", modalHTML);
+
+
+  /* =======================================================
+     ELEMENTS
+  ======================================================= */
+
+  const modal = document.getElementById("projectModal");
+  const modalOverlay = modal.querySelector(".project-modal-overlay");
+  const modalClose = modal.querySelector(".project-modal-close");
+
+  const modalCategory =
+    modal.querySelector(".project-modal-category");
+
+  const modalTitle =
+    modal.querySelector(".project-modal-title");
+
+  const modalDescription =
+    modal.querySelector(".project-modal-description");
+
+  const modalContent =
+    modal.querySelector(".project-modal-content-area");
+
+
+  const lightbox =
+    document.getElementById("imageLightbox");
+
+  const lightboxOverlay =
+    lightbox.querySelector(".image-lightbox-overlay");
+
+  const lightboxClose =
+    lightbox.querySelector(".image-lightbox-close");
+
+  const lightboxImage =
+    lightbox.querySelector(".image-lightbox-image");
+
+
+  /* =======================================================
+     OPEN PROJECT
+  ======================================================= */
+
+  function openProject(projectID) {
+
+    const project = projects[projectID];
+
+    if (!project) {
+      return;
+    }
+
+    modalCategory.textContent = project.category;
+
+    modalTitle.textContent = project.title;
+
+    modalDescription.textContent = project.description;
+
+    modalContent.innerHTML = "";
+
+
+    /* -----------------------------------------------
+       NO MEDIA
+    ------------------------------------------------ */
+
+    if (!project.media || project.media.length === 0) {
+
+      const emptyState = document.createElement("div");
+
+      emptyState.className = "project-empty-state";
+
+      emptyState.innerHTML = `
         <p>
-          Strategy meets creativity.
-          <span>Ideas should not only look good. They should move people.</span>
+          This project focuses on professional experience,
+          strategy, coordination, and execution.
         </p>
+      `;
 
-        <div class="intro-arrow">↓</div>
+      modalContent.appendChild(emptyState);
 
-      </div>
-
-    </section>
-
-
-    <!-- =========================
-         ABOUT
-    ========================== -->
-
-    <section class="about section" id="about">
-
-      <div class="container">
-
-        <div class="section-heading">
-
-          <div class="section-label">
-            <span>01</span>
-            About
-          </div>
-
-          <div class="section-heading-line"></div>
-
-        </div>
+    }
 
 
-        <div class="about-grid">
+    /* -----------------------------------------------
+       MEDIA
+    ------------------------------------------------ */
 
-          <div class="about-title">
-            <h2>
-              A communicator
-              <span>who thinks</span>
-              like a marketer.
-            </h2>
-          </div>
+    else {
 
-          <div class="about-copy">
+      const section = document.createElement("div");
 
-            <p class="about-lead">
-              With a background in Communication and hands-on experience across
-              marketing, creative production, community building, and events,
-              I work at the intersection of strategy and execution.
-            </p>
+      section.className = "project-media-section";
 
-            <p>
-              My experience spans startups, healthcare, retail, food & beverage,
-              Web3, and student-led organizations. From developing content
-              strategies to producing campaigns and coordinating partnerships,
-              I enjoy turning ideas into work that people can actually see,
-              understand, and remember.
-            </p>
+      const grid = document.createElement("div");
 
-            <a href="#experience" class="text-link">
-              Explore my experience
-              <span>→</span>
-            </a>
-
-          </div>
-
-        </div>
+      grid.className = "project-media-grid";
 
 
-        <div class="about-stats">
+      project.media.forEach((media) => {
 
-          <div class="stat">
-            <span class="stat-number">30+</span>
-            <span class="stat-label">Brands & projects worked with</span>
-          </div>
+        const card = document.createElement("div");
 
-          <div class="stat">
-            <span class="stat-number">2026</span>
-            <span class="stat-label">AB Communication • Summa Cum Laude</span>
-          </div>
-
-          <div class="stat">
-            <span class="stat-number">5+</span>
-            <span class="stat-label">Years of creative & digital experience</span>
-          </div>
-
-          <div class="stat">
-            <span class="stat-number">360°</span>
-            <span class="stat-label">Digital + physical marketing experience</span>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
+        card.className = "project-media-card";
 
 
-    <!-- =========================
-         SELECTED WORK
-    ========================== -->
+        /* IMAGE */
 
-    <section class="work section" id="work">
+        if (media.type === "image") {
 
-      <div class="container">
+          card.classList.add("project-image-card");
 
-        <div class="section-heading section-heading-work">
+          const image = document.createElement("img");
 
-          <div>
-            <div class="section-label">
-              <span>02</span>
-              Selected Work
-            </div>
+          image.src = media.src;
 
-            <h2 class="section-title">
-              Work that brings
-              <span>ideas to life.</span>
-            </h2>
-          </div>
+          image.alt = media.alt || project.title;
 
-          <p class="section-intro">
-            A selection of projects across marketing, branding,
-            creative production, social media, events, and digital.
-          </p>
+          image.loading = "lazy";
 
-        </div>
+          card.appendChild(image);
 
 
-        <!-- FOOTLAB -->
+          card.addEventListener("click", () => {
 
-        <article class="work-project work-project-featured">
+            openLightbox(
+              media.src,
+              media.alt || project.title
+            );
 
-          <div class="project-visual project-visual-large">
+          });
 
-            <img
-              src="https://drive.google.com/thumbnail?id=1HLJB4XqchXSQvDGCxOOdJySWNg17w2f6&sz=w2000"
-              alt="FOOTLAB campaign work"
+        }
+
+
+        /* VIDEO */
+
+        if (media.type === "video") {
+
+          card.classList.add("project-video-card");
+
+          card.innerHTML = `
+            <iframe
+              src="${media.src}"
+              title="${media.title || project.title}"
               loading="lazy"
-            >
+              allow="autoplay; fullscreen"
+              allowfullscreen
+            ></iframe>
+          `;
 
-            <div class="project-image-label">
-              Healthcare • Marketing
-            </div>
+        }
 
-          </div>
 
+        grid.appendChild(card);
 
-          <div class="project-info">
+      });
 
-            <div class="project-meta">
-              <span>01</span>
-              <span>2025–2026</span>
-            </div>
 
-            <h3>FOOTLAB</h3>
+      section.appendChild(grid);
 
-            <p class="project-role">
-              Marketing Assistant
-            </p>
+      modalContent.appendChild(section);
 
-            <p>
-              Built and supported marketing initiatives for a custom orthotics
-              brand across digital content, social media, SEO, campaigns,
-              partnerships, events, and physical marketing.
-            </p>
+    }
 
-            <div class="project-tags">
-              <span>Digital Marketing</span>
-              <span>Brand Development</span>
-              <span>Content</span>
-              <span>Events</span>
-            </div>
 
-            <button
-              class="work-link text-link"
-              data-project="footlab"
-              type="button"
-            >
-              View project
-              <span>→</span>
-            </button>
+    modal.classList.add("active");
 
-          </div>
+    document.body.style.overflow = "hidden";
 
-        </article>
+  }
 
 
-        <!-- KWENCH -->
+  /* =======================================================
+     CLOSE PROJECT
+  ======================================================= */
 
-        <article class="work-project work-project-split">
+  function closeProject() {
 
-          <div class="project-info">
+    modal.classList.remove("active");
 
-            <div class="project-meta">
-              <span>02</span>
-              <span>2025–2026</span>
-            </div>
+    document.body.style.overflow = "";
 
-            <h3>Kwench Juice Cafe</h3>
+  }
 
-            <p class="project-role">
-              Social Media & Creative
-            </p>
 
-            <p>
-              Developed social media content and creative materials for a
-              food and beverage brand, helping translate the brand into
-              engaging digital content.
-            </p>
+  /* =======================================================
+     LIGHTBOX
+  ======================================================= */
 
-            <div class="project-tags">
-              <span>Social Media</span>
-              <span>Creative</span>
-              <span>Content</span>
-            </div>
+  function openLightbox(src, alt) {
 
-            <button
-              class="work-link text-link"
-              data-project="kwench"
-              type="button"
-            >
-              View project
-              <span>→</span>
-            </button>
+    lightboxImage.src = src;
 
-          </div>
+    lightboxImage.alt = alt || "";
 
+    lightbox.classList.add("active");
 
-          <div class="project-gallery project-gallery-kwench">
+  }
 
-            <div class="gallery-main">
-              <img
-                src="https://drive.google.com/thumbnail?id=1BjQfodMYmvb8uyAbE-h_NIYZZCWP5w1o&sz=w1600"
-                alt="Kwench Juice Cafe creative"
-                loading="lazy"
-              >
-            </div>
 
-            <div class="gallery-small">
-              <img
-                src="https://drive.google.com/thumbnail?id=1inkF8cQKoAc79BOoHSK4MVgOcdRaVnre&sz=w1000"
-                alt="Kwench Juice Cafe content"
-                loading="lazy"
-              >
+  function closeLightbox() {
 
-              <img
-                src="https://drive.google.com/thumbnail?id=1M23yNIWc8i8Z8j5aQOGw7-hz0Zt4979s&sz=w1000"
-                alt="Kwench Juice Cafe marketing content"
-                loading="lazy"
-              >
-            </div>
+    lightbox.classList.remove("active");
 
-          </div>
+    lightboxImage.src = "";
 
-        </article>
+  }
 
 
-        <!-- ALTA ANIMA -->
+  /* =======================================================
+     PROJECT BUTTONS
+  ======================================================= */
 
-        <article class="work-project work-project-editorial">
+  document.querySelectorAll(".work-link").forEach((button) => {
 
-          <div class="project-gallery project-gallery-alta">
+    button.addEventListener("click", () => {
 
-            <div class="gallery-main">
-              <img
-                src="https://drive.google.com/thumbnail?id=1lTUxkyFAPt8_gdKYJDNJF9SqVpzicRMa&sz=w1600"
-                alt="Alta Anima creative work"
-                loading="lazy"
-              >
-            </div>
+      const projectID =
+        button.getAttribute("data-project");
 
-            <div class="gallery-small">
-              <img
-                src="https://drive.google.com/thumbnail?id=1mrjuvoYDSzh-0-fvuvaqlavAADE9xu6h&sz=w1000"
-                alt="Alta Anima marketing creative"
-                loading="lazy"
-              >
-            </div>
+      openProject(projectID);
 
-          </div>
+    });
 
+  });
 
-          <div class="project-info">
 
-            <div class="project-meta">
-              <span>03</span>
-              <span>Marketing • Creative</span>
-            </div>
+  /* =======================================================
+     CLOSE EVENTS
+  ======================================================= */
 
-            <h3>Alta Anima</h3>
+  modalClose.addEventListener("click", closeProject);
 
-            <p class="project-role">
-              Marketing Assistant
-            </p>
+  modalOverlay.addEventListener("click", closeProject);
 
-            <p>
-              Supported selected marketing and creative initiatives through
-              visual content, brand communication, and campaign materials.
-            </p>
+  lightboxClose.addEventListener(
+    "click",
+    closeLightbox
+  );
 
-            <div class="project-tags">
-              <span>Marketing</span>
-              <span>Creative Direction</span>
-              <span>Branding</span>
-            </div>
+  lightboxOverlay.addEventListener(
+    "click",
+    closeLightbox
+  );
 
-            <button
-              class="work-link text-link"
-              data-project="alta"
-              type="button"
-            >
-              View project
-              <span>→</span>
-            </button>
 
-          </div>
+  /* =======================================================
+     ESCAPE KEY
+  ======================================================= */
 
-        </article>
+  document.addEventListener("keydown", (event) => {
 
+    if (event.key !== "Escape") {
+      return;
+    }
 
-        <!-- SOLOUR -->
+    if (lightbox.classList.contains("active")) {
 
-        <article class="work-project work-project-solour">
+      closeLightbox();
 
-          <div class="project-info">
+      return;
 
-            <div class="project-meta">
-              <span>04</span>
-              <span>Academic Project</span>
-            </div>
+    }
 
-            <h3>Solour</h3>
+    if (modal.classList.contains("active")) {
 
-            <p class="project-role">
-              Brand Strategy & Creative
-            </p>
+      closeProject();
 
-            <p>
-              A thesis-driven marketing project for a lip-care sunbalm,
-              covering brand positioning, target audience research,
-              visual identity, creative direction, and marketing strategy.
-            </p>
+    }
 
-            <div class="project-tags">
-              <span>Brand Strategy</span>
-              <span>Research</span>
-              <span>Creative</span>
-              <span>Positioning</span>
-            </div>
+  });
 
-            <button
-              class="work-link text-link"
-              data-project="solour"
-              type="button"
-            >
-              View project
-              <span>→</span>
-            </button>
 
-          </div>
+  /* =======================================================
+     SMOOTH ANCHOR SCROLL
+  ======================================================= */
 
+  document.querySelectorAll('a[href^="#"]').forEach((link) => {
 
-          <div class="solour-visual">
+    link.addEventListener("click", (event) => {
 
-            <div class="solour-cover">
-              <img
-                src="https://drive.google.com/thumbnail?id=1SGnr5zjLr45yFaUB9fmqFaOKws4NKS-j&sz=w1400"
-                alt="Solour brand cover"
-                loading="lazy"
-              >
-            </div>
+      const targetID =
+        link.getAttribute("href");
 
-            <div class="solour-mockup">
-              <img
-                src="https://drive.google.com/thumbnail?id=1s3SJeJe0VquBI0Ye5GOBkDEQKpayrmF0&sz=w1000"
-                alt="Solour product mockup"
-                loading="lazy"
-              >
-            </div>
+      const target =
+        document.querySelector(targetID);
 
-          </div>
+      if (!target) {
+        return;
+      }
 
-        </article>
+      event.preventDefault();
 
+      const headerOffset = 85;
 
-        <!-- SM SUPERMALLS -->
+      const targetPosition =
+        target.getBoundingClientRect().top +
+        window.scrollY -
+        headerOffset;
 
-        <article class="work-project work-project-corporate">
+      window.scrollTo({
+        top: targetPosition,
+        behavior: "smooth"
+      });
 
-          <div class="corporate-number">
-            05
-          </div>
+    });
 
-          <div class="project-info">
+  });
 
-            <div class="project-meta">
-              <span>SM Supermalls</span>
-              <span>2025–2026</span>
-            </div>
 
-            <h3>SM Supermalls</h3>
+  /* =======================================================
+     REVEAL ANIMATION
+  ======================================================= */
 
-            <p class="project-role">
-              Operations Intern • MSME Team
-            </p>
+  const revealElements = document.querySelectorAll(
+    ".work-project, .capability, .experience-item, .stat, .tools-grid span"
+  );
 
-            <p>
-              Worked on monitoring, reporting, documentation, presentations,
-              mall coordination, business materials, partnership decks,
-              and MSME-related initiatives across SM Supermalls.
-            </p>
 
-            <div class="project-tags">
-              <span>Operations</span>
-              <span>Reporting</span>
-              <span>Partnerships</span>
-              <span>Events</span>
-            </div>
+  if ("IntersectionObserver" in window) {
 
-            <button
-              class="work-link text-link"
-              data-project="sm"
-              type="button"
-            >
-              View experience
-              <span>→</span>
-            </button>
+    const revealObserver =
+      new IntersectionObserver(
+        (entries, observer) => {
 
-          </div>
+          entries.forEach((entry) => {
 
-          <div class="corporate-side">
-            <span>Retail</span>
-            <span>Operations</span>
-            <span>Partnerships</span>
-            <span>Marketing</span>
-          </div>
+            if (!entry.isIntersecting) {
+              return;
+            }
 
-        </article>
+            entry.target.classList.add("is-visible");
 
+            observer.unobserve(entry.target);
 
-        <!-- WEB3 -->
+          });
 
-        <article class="work-project work-project-web3">
+        },
+        {
+          threshold: 0.08
+        }
+      );
 
-          <div class="web3-number">
-            06
-          </div>
 
-          <div class="project-info">
+    revealElements.forEach((element) => {
 
-            <div class="project-meta">
-              <span>Web3</span>
-              <span>2022–2024</span>
-            </div>
+      element.classList.add("reveal");
 
-            <h3>Web3 & Cryptocurrency</h3>
+      revealObserver.observe(element);
 
-            <p class="project-role">
-              Community • Partnerships • Digital Marketing
-            </p>
+    });
 
-            <p>
-              Started working in Web3 at 16, building experience across
-              community management, Discord moderation, partnerships,
-              strategic communication, and digital communities.
-            </p>
+  }
 
-            <div class="project-tags">
-              <span>Community</span>
-              <span>Discord</span>
-              <span>Partnerships</span>
-              <span>Digital</span>
-            </div>
 
-            <button
-              class="work-link text-link"
-              data-project="web3"
-              type="button"
-            >
-              View experience
-              <span>→</span>
-            </button>
+  /* =======================================================
+     HEADER SCROLL STATE
+  ======================================================= */
 
-          </div>
+  const header =
+    document.querySelector(".site-header");
 
-          <div class="web3-mark">
-            WEB3
-          </div>
 
-        </article>
+  window.addEventListener(
+    "scroll",
+    () => {
 
-      </div>
+      if (window.scrollY > 30) {
 
-    </section>
+        header.classList.add("scrolled");
 
+      } else {
 
-    <!-- =========================
-         WHAT I DO
-    ========================== -->
+        header.classList.remove("scrolled");
 
-    <section class="capabilities section">
+      }
 
-      <div class="container">
+    },
+    {
+      passive: true
+    }
+  );
 
-        <div class="section-heading">
 
-          <div class="section-label">
-            <span>03</span>
-            What I Do
-          </div>
+  /* =======================================================
+     IMAGE ERROR HANDLING
+  ======================================================= */
 
-          <div class="section-heading-line"></div>
+  document.querySelectorAll("img").forEach((image) => {
 
-        </div>
+    image.addEventListener("error", () => {
 
+      image.style.display = "none";
 
-        <div class="capabilities-intro">
+      const parent = image.parentElement;
 
-          <h2>
-            From the first idea
-            <span>to the final execution.</span>
-          </h2>
+      if (parent) {
+        parent.classList.add("image-error");
+      }
 
-          <p>
-            I bring together communication, strategy, creative thinking,
-            and hands-on execution to help brands communicate better.
-          </p>
+    });
 
-        </div>
+  });
 
-
-        <div class="capabilities-grid">
-
-          <div class="capability">
-            <span class="capability-number">01</span>
-            <h3>Digital Marketing</h3>
-            <p>
-              Campaign planning, content strategy, SEO, analytics,
-              and digital growth initiatives.
-            </p>
-          </div>
-
-          <div class="capability">
-            <span class="capability-number">02</span>
-            <h3>Social Media</h3>
-            <p>
-              Content planning, community engagement, creative
-              production, and platform management.
-            </p>
-          </div>
-
-          <div class="capability">
-            <span class="capability-number">03</span>
-            <h3>Brand Development</h3>
-            <p>
-              Brand communication, positioning, visual direction,
-              and campaign development.
-            </p>
-          </div>
-
-          <div class="capability">
-            <span class="capability-number">04</span>
-            <h3>Creative Production</h3>
-            <p>
-              Graphic design, photography direction, video editing,
-              presentations, and creative assets.
-            </p>
-          </div>
-
-          <div class="capability">
-            <span class="capability-number">05</span>
-            <h3>Community Building</h3>
-            <p>
-              Community management, Discord operations, engagement,
-              moderation, and digital communities.
-            </p>
-          </div>
-
-          <div class="capability">
-            <span class="capability-number">06</span>
-            <h3>Partnerships & Events</h3>
-            <p>
-              Partnerships, event coordination, activations,
-              stakeholder communication, and experiential marketing.
-            </p>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =========================
-         EXPERIENCE
-    ========================== -->
-
-    <section class="experience section" id="experience">
-
-      <div class="container">
-
-        <div class="section-heading">
-
-          <div class="section-label">
-            <span>04</span>
-            Experience
-          </div>
-
-          <div class="section-heading-line"></div>
-
-        </div>
-
-
-        <div class="experience-intro">
-
-          <h2>
-            Where I've
-            <span>worked.</span>
-          </h2>
-
-          <p>
-            A mix of professional, creative, entrepreneurial,
-            and digital experience across different industries.
-          </p>
-
-        </div>
-
-
-        <div class="experience-list">
-
-          <div class="experience-item">
-
-            <div class="experience-date">
-              2025–2026
-            </div>
-
-            <div class="experience-main">
-              <h3>FOOTLAB</h3>
-              <span>Marketing Assistant</span>
-            </div>
-
-            <div class="experience-description">
-              Digital marketing, content strategy, SEO, social media,
-              partnerships, events, brand development, and analytics.
-            </div>
-
-          </div>
-
-
-          <div class="experience-item">
-
-            <div class="experience-date">
-              2025–2026
-            </div>
-
-            <div class="experience-main">
-              <h3>SM Supermalls</h3>
-              <span>Operations Intern • MSME Team</span>
-            </div>
-
-            <div class="experience-description">
-              Monitoring, reporting, documentation, presentations,
-              mall coordination, partnerships, and MSME initiatives.
-            </div>
-
-          </div>
-
-
-          <div class="experience-item">
-
-            <div class="experience-date">
-              2025–2026
-            </div>
-
-            <div class="experience-main">
-              <h3>Kwench Juice Cafe</h3>
-              <span>Social Media & Creative</span>
-            </div>
-
-            <div class="experience-description">
-              Social media content, creative production,
-              digital marketing, and brand communication.
-            </div>
-
-          </div>
-
-
-          <div class="experience-item">
-
-            <div class="experience-date">
-              2022–2024
-            </div>
-
-            <div class="experience-main">
-              <h3>Web3 & Cryptocurrency</h3>
-              <span>Community & Marketing</span>
-            </div>
-
-            <div class="experience-description">
-              Community management, Discord moderation,
-              partnerships, community building, and strategic communication.
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =========================
-         TOOLS
-    ========================== -->
-
-    <section class="tools section">
-
-      <div class="container">
-
-        <div class="section-heading">
-
-          <div class="section-label">
-            <span>05</span>
-            Tools
-          </div>
-
-          <div class="section-heading-line"></div>
-
-        </div>
-
-
-        <div class="tools-content">
-
-          <h2>
-            Tools I use to
-            <span>make things happen.</span>
-          </h2>
-
-          <div class="tools-grid">
-
-            <span>Canva</span>
-            <span>Adobe Photoshop</span>
-            <span>Adobe Lightroom</span>
-            <span>Adobe Premiere Pro</span>
-            <span>CapCut</span>
-            <span>Meta Business Suite</span>
-            <span>ChatGPT</span>
-            <span>Claude</span>
-            <span>Gemini</span>
-            <span>Microsoft Copilot</span>
-            <span>GitHub</span>
-            <span>Vercel</span>
-            <span>Supabase</span>
-            <span>Squarespace</span>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =========================
-         EDUCATION
-    ========================== -->
-
-    <section class="education section">
-
-      <div class="container education-container">
-
-        <div class="section-label">
-          <span>06</span>
-          Education
-        </div>
-
-        <div class="education-main">
-
-          <p class="education-school">
-            National University – Manila
-          </p>
-
-          <h2>
-            Bachelor of Arts in
-            <span>Communication</span>
-          </h2>
-
-          <div class="education-details">
-            <span>2023–2026</span>
-            <span>Summa Cum Laude</span>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =========================
-         CONTACT
-    ========================== -->
-
-    <section class="contact section" id="contact">
-
-      <div class="container">
-
-        <div class="contact-card">
-
-          <div class="contact-label">
-            Let's work together.
-          </div>
-
-          <h2>
-            Have an idea?
-            <span>Let's make it happen.</span>
-          </h2>
-
-          <p>
-            Whether it's a marketing campaign, brand project,
-            creative collaboration, or digital experience,
-            I'd love to hear about it.
-          </p>
-
-          <div class="contact-actions">
-
-            <a
-              href="mailto:angelopacya00@gmail.com"
-              class="contact-link"
-            >
-              <span>Email me</span>
-              <strong>angelopacya00@gmail.com</strong>
-              <span>↗</span>
-            </a>
-
-            <a
-              href="https://wa.me/639353854220"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="contact-link"
-            >
-              <span>WhatsApp / Viber</span>
-              <strong>+63 935 385 4220</strong>
-              <span>↗</span>
-            </a>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-  </main>
-
-
-  <!-- =========================
-       FOOTER
-  ========================== -->
-
-  <footer class="site-footer">
-
-    <div class="container footer-inner">
-
-      <div>
-        <span class="footer-name">Angelo R. Pacya</span>
-        <span class="footer-role">
-          Communication • Marketing • Creative
-        </span>
-      </div>
-
-      <div class="footer-right">
-        <span>© 2026 Angelo Pacya</span>
-        <a href="#home">Back to top ↑</a>
-      </div>
-
-    </div>
-
-  </footer>
-
-
-  <!-- Existing project modal / interactions -->
-  <script src="script.js"></script>
-
-</body>
-</html>
+});
