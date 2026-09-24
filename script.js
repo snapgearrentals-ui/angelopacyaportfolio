@@ -1,20 +1,7 @@
 /* =========================================================
-   ANGELO PACYA — PORTFOLIO
-   Interactive Project Gallery
+   ANGELO PACYA PORTFOLIO
+   COMPLETE SCRIPT
 ========================================================= */
-
-
-/* =========================================================
-   GOOGLE DRIVE HELPERS
-========================================================= */
-
-function driveImage(id, size = "w1600") {
-  return `https://drive.google.com/thumbnail?id=${id}&sz=${size}`;
-}
-
-function drivePreview(id) {
-  return `https://drive.google.com/file/d/${id}/preview`;
-}
 
 
 /* =========================================================
@@ -25,167 +12,285 @@ const projects = {
 
   footlab: {
     title: "FOOTLAB",
-    category: "Digital Marketing · Brand Development · Creative",
-    role: "Marketing Assistant",
-    year: "2025 — 2026",
-
+    category: "Digital Marketing · Brand Development",
     description:
-      "Worked across digital marketing, social media, creative campaigns, SEO, partnerships, events, brand development, content production, and performance reporting for FOOTLAB.",
+      "Marketing and creative work for FOOTLAB, covering social media, content strategy, campaigns, events, partnerships, physical marketing, and brand development.",
 
-    services: [
+    tags: [
       "Digital Marketing",
       "Social Media",
-      "Brand Development",
       "Creative Production",
-      "SEO",
-      "Events & Partnerships",
-      "Analytics & Reporting"
+      "Events",
+      "Brand Development"
     ],
+
+    cover:
+      "1HLJB4XqchXSQvDGCxOOdJySWNg17w2f6",
 
     media: [
 
-      ["image", "1HLJB4XqchXSQvDGCxOOdJySWNg17w2f6", "FOOTLAB creative work"],
-      ["image", "1OaM732spQtU9wMFfn7Kn0tkZLJobtpi2", "FOOTLAB marketing work"],
-      ["image", "1_nwetHwOkZEZJyfEn8FE38BRAIcsU6Ox", "FOOTLAB social media creative"],
-      ["image", "1x_aTEzidyCU-5I0D6gRdlVDCaKbLjzDv", "FOOTLAB campaign creative"],
-      ["image", "19--9sx60VpOEDs1nDhTFQPNJ-wkktfQ0", "FOOTLAB event marketing"],
-      ["image", "1axbRYiS-pHxghEPdoWwC3gZjIpuZS6ON", "FOOTLAB event activation"],
-      ["image", "1Q7BcKjfB6NjxOCQuFDyTprGpEuxmc0EZ", "FOOTLAB creative campaign"],
-      ["image", "1aWISvTciZ8Ptlfv_QeEgx5URpBNd_x5N", "FOOTLAB branding"],
-      ["image", "1J2PfnMeRqi7lNCK04ELez0KYlkqdtxET", "FOOTLAB content"],
-      ["image", "15hOLxhFsXBAJU8j2YTK00-pk0a9uHSLt", "FOOTLAB marketing material"],
-      ["image", "1QhkCwEO2bUWJXDTGPGCt6uVZluTR-PLi", "FOOTLAB social media content"],
-      ["image", "17W3x-3b2rGylh_NFW16TEmwyFtCwjjYp", "FOOTLAB event creative"],
-      ["image", "10bmlvX6h72FEIm4UT4-6DFfSKyPSWNWJ", "FOOTLAB campaign"],
-      ["image", "1j1PXhsh6vr72XrSFDcudS1Qh1KwsyfrO", "FOOTLAB creative project"],
-      ["image", "1dbtq_MWQ4Xmgt7x4e_nM9HTh-FsGPh3c", "FOOTLAB marketing project"],
-      ["image", "1hfAlw4ffECSq53BEcktUnAuOathaxbpp", "FOOTLAB campaign material"],
+      {
+        type: "image",
+        id: "1HLJB4XqchXSQvDGCxOOdJySWNg17w2f6"
+      },
+      {
+        type: "image",
+        id: "1OaM732spQtU9wMFfn7Kn0tkZLJobtpi2"
+      },
+      {
+        type: "image",
+        id: "1_nwetHwOkZEZJyfEn8FE38BRAIcsU6Ox"
+      },
+      {
+        type: "image",
+        id: "1x_aTEzidyCU-5I0D6gRdlVDCaKbLjzDv"
+      },
+      {
+        type: "image",
+        id: "19--9sx60VpOEDs1nDhTFQPNJ-wkktfQ0"
+      },
+      {
+        type: "image",
+        id: "1axbRYiS-pHxghEPdoWwC3gZjIpuZS6ON"
+      },
+      {
+        type: "image",
+        id: "1Q7BcKjfB6NjxOCQuFDyTprGpEuxmc0EZ"
+      },
+      {
+        type: "image",
+        id: "1aWISvTciZ8Ptlfv_QeEgx5URpBNd_x5N"
+      },
+      {
+        type: "image",
+        id: "1J2PfnMeRqi7lNCK04ELez0KYlkqdtxET"
+      },
+      {
+        type: "image",
+        id: "15hOLxhFsXBAJU8j2YTK00-pk0a9uHSLt"
+      },
+      {
+        type: "image",
+        id: "1QhkCwEO2bUWJXDTGPGCt6uVZluTR-PLi"
+      },
+      {
+        type: "image",
+        id: "17W3x-3b2rGylh_NFW16TEmwyFtCwjjYp"
+      },
+      {
+        type: "image",
+        id: "10bmlvX6h72FEIm4UT4-6DFfSKyPSWNWJ"
+      },
+      {
+        type: "image",
+        id: "1j1PXhsh6vr72XrSFDcudS1Qh1KwsyfrO"
+      },
+      {
+        type: "image",
+        id: "1dbtq_MWQ4Xmgt7x4e_nM9HTh-FsGPh3c"
+      },
+      {
+        type: "image",
+        id: "1hfAlw4ffECSq53BEcktUnAuOathaxbpp"
+      },
 
-      ["video", "1IKmOuyCaemAlA2AmaPygY_wx9Gdlc1Vs", "FOOTLAB video"],
-      ["video", "1u1LG67UTN3Q9uTAiWbSQ7VE5uOveRmpQ", "FOOTLAB video campaign"],
-      ["video", "1oVfMyskS-gE0IK8uSK64bdV0hRPMOw9F", "FOOTLAB social media video"]
-
+      {
+        type: "video",
+        id: "1IKmOuyCaemAlA2AmaPygY_wx9Gdlc1Vs"
+      },
+      {
+        type: "video",
+        id: "1u1LG67UTN3Q9uTAiWbSQ7VE5uOveRmpQ"
+      },
+      {
+        type: "video",
+        id: "1oVfMyskS-gE0IK8uSK64bdV0hRPMOw9F"
+      }
     ]
   },
 
 
   kwench: {
     title: "Kwench Juice Cafe",
-    category: "Social Media · Creative · Digital Marketing",
-    role: "Social Media & Creative",
-    year: "2025 — 2026",
-
+    category: "Social Media · Creative",
     description:
-      "Managed social media and creative content for Kwench Juice Cafe, developing visual assets, social content, campaigns, and video materials across branch accounts.",
+      "Social media and creative work for Kwench Juice Cafe, including visual content, campaign materials, digital marketing, and short-form video.",
 
-    services: [
+    tags: [
       "Social Media",
-      "Content Strategy",
+      "Creative",
       "Graphic Design",
-      "Video Editing",
-      "Digital Marketing",
-      "Creative Production"
+      "Video"
     ],
+
+    cover:
+      "1BjQfodMYmvb8uyAbE-h_NIYZZCWP5w1o",
 
     media: [
 
-      ["image", "1BjQfodMYmvb8uyAbE-h_NIYZZCWP5w1o", "Kwench Juice Cafe creative work"],
-      ["image", "1inkF8cQKoAc79BOoHSK4MVgOcdRaVnre", "Kwench social media creative"],
-      ["image", "1M23yNIWc8i8Z8j5aQOGw7-hz0Zt4979s", "Kwench campaign creative"],
-      ["image", "1fdRw0VsewZRWg-pOrhmV4Yb-bG-IbUQE", "Kwench branding"],
-      ["image", "13gvBEWV93TrGvWBrOxPxhM_YAjLQJw6r", "Kwench content"],
-      ["image", "1nP5A691jMtCMqvF1FuTRS4EoKqWcwkqz", "Kwench social media campaign"],
-      ["image", "1Y6-pI24HGdTKgkAY0ue8hT7gv282YlWz", "Kwench marketing creative"],
-      ["image", "1GhV_5bXTNpEwHdjiinHwi7KKexKVqYRV", "Kwench promotional content"],
+      {
+        type: "image",
+        id: "1BjQfodMYmvb8uyAbE-h_NIYZZCWP5w1o"
+      },
+      {
+        type: "image",
+        id: "1inkF8cQKoAc79BOoHSK4MVgOcdRaVnre"
+      },
+      {
+        type: "image",
+        id: "1M23yNIWc8i8Z8j5aQOGw7-hz0Zt4979s"
+      },
+      {
+        type: "image",
+        id: "1fdRw0VsewZRWg-pOrhmV4Yb-bG-IbUQE"
+      },
+      {
+        type: "image",
+        id: "13gvBEWV93TrGvWBrOxPxhM_YAjLQJw6r"
+      },
+      {
+        type: "image",
+        id: "1nP5A691jMtCMqvF1FuTRS4EoKqWcwkqz"
+      },
+      {
+        type: "image",
+        id: "1Y6-pI24HGdTKgkAY0ue8hT7gv282YlWz"
+      },
+      {
+        type: "image",
+        id: "1GhV_5bXTNpEwHdjiinHwi7KKexKVqYRV"
+      },
 
-      ["video", "1eMAD62knoG7Uyyn12QxxYjDNpz6bqlQJ", "Kwench video"],
-      ["video", "18x_ap_emNC5bQA-B0F56nhIITs2jnBcp", "Kwench social media video"],
-      ["video", "1ZpOjXO_hGEPe1upBEoiPiKHEgPTea8OJ", "Kwench campaign video"],
-      ["video", "1ZwD3HOULtJy92z7tjiefWOgzyPnU2G_P", "Kwench creative video"]
-
+      {
+        type: "video",
+        id: "1eMAD62knoG7Uyyn12QxxYjDNpz6bqlQJ"
+      },
+      {
+        type: "video",
+        id: "18x_ap_emNC5bQA-B0F56nhIITs2jnBcp"
+      },
+      {
+        type: "video",
+        id: "1ZpOjXO_hGEPe1upBEoiPiKHEgPTea8OJ"
+      },
+      {
+        type: "video",
+        id: "1ZwD3HOULtJy92z7tjiefWOgzyPnU2G_P"
+      }
     ]
   },
 
 
   alta: {
     title: "Alta Anima",
-    category: "Marketing · Design · Creative",
-    role: "Marketing Assistant",
-    year: "2025 — 2026",
-
+    category: "Marketing · Creative",
     description:
-      "Supported marketing and creative initiatives through visual design, campaign assets, and communication materials.",
+      "Selected marketing and creative work developed for Alta Anima, including visual communication and campaign assets.",
 
-    services: [
+    tags: [
       "Marketing",
-      "Graphic Design",
-      "Creative Direction",
-      "Content"
+      "Creative",
+      "Graphic Design"
     ],
+
+    cover:
+      "1lTUxkyFAPt8_gdKYJDNJF9SqVpzicRMa",
 
     media: [
 
-      ["image", "1lTUxkyFAPt8_gdKYJDNJF9SqVpzicRMa", "Alta Anima creative work"],
-      ["image", "1mrjuvoYDSzh-0-fvuvaqlavAADE9xu6h", "Alta Anima marketing work"],
-      ["image", "1OMU-xiu4-uRwyEqNFH9-zqzctpI7l0H_", "Alta Anima design"],
-      ["image", "1-jnAnZVFrdvNkKn8MO4utQV8u73KCSee", "Alta Anima creative"],
-      ["image", "1rHQdSaqwIqmyPnR69vwjR-b2omc70uWq", "Alta Anima marketing material"],
-      ["image", "1tt_P_lT6mJczZd8VarHF8-sb4aUHCZ17", "Alta Anima campaign"],
-      ["image", "1f5uHDr4mUJpl9xVA24FW5NDm9OC-cYTC", "Alta Anima design project"]
-
+      {
+        type: "image",
+        id: "1lTUxkyFAPt8_gdKYJDNJF9SqVpzicRMa"
+      },
+      {
+        type: "image",
+        id: "1mrjuvoYDSzh-0-fvuvaqlavAADE9xu6h"
+      },
+      {
+        type: "image",
+        id: "1OMU-xiu4-uRwyEqNFH9-zqzctpI7l0H_"
+      },
+      {
+        type: "image",
+        id: "1-jnAnZVFrdvNkKn8MO4utQV8u73KCSee"
+      },
+      {
+        type: "image",
+        id: "1rHQdSaqwIqmyPnR69vwjR-b2omc70uWq"
+      },
+      {
+        type: "image",
+        id: "1tt_P_lT6mJczZd8VarHF8-sb4aUHCZ17"
+      },
+      {
+        type: "image",
+        id: "1f5uHDr4mUJpl9xVA24FW5NDm9OC-cYTC"
+      }
     ]
   },
 
 
   solour: {
     title: "Solour",
-    category: "Brand Strategy · Creative · Marketing",
-    role: "Marketing & Creative",
-    year: "Academic Project",
-
+    category: "Brand Strategy · Creative",
     description:
-      "An academic marketing and branding project focused on a lip-care sunbalm, covering research, target audience, positioning, branding, creative development, and marketing strategy.",
+      "Academic brand development project for Solour, focused on positioning, audience, visual communication, and campaign development.",
 
-    services: [
+    tags: [
       "Brand Strategy",
-      "Market Research",
-      "Positioning",
-      "Creative Direction",
-      "Graphic Design",
-      "Marketing Strategy"
+      "Research",
+      "Creative",
+      "Marketing"
     ],
+
+    cover:
+      "1qoD8imjaSILu9wVi-46-ORnRPgOJGTKk",
 
     media: [
 
-      ["image", "1qoD8imjaSILu9wVi-46-ORnRPgOJGTKk", "Solour brand project"],
-      ["image", "1IiTa4hUHAAWFIS6nu9PkrKaHjcW-Dzmt", "Solour branding"],
-      ["image", "1_2febscGC-VMWCeZ1L1A6tAda2nElI5_", "Solour campaign"],
-      ["image", "1SGnr5zjLr45yFaUB9fmqFaOKws4NKS-j", "Solour marketing creative"],
-      ["image", "12ysk-3g-gdaCZWat50s-9j2KhpyubcOR", "Solour visual identity"],
-      ["image", "1s3SJeJe0VquBI0Ye5GOBkDEQKpayrmF0", "Solour creative"],
-      ["image", "1LApEqZ4eHB7OMUGggOVemGjmJyxsSAET", "Solour brand presentation"]
-
+      {
+        type: "image",
+        id: "1qoD8imjaSILu9wVi-46-ORnRPgOJGTKk"
+      },
+      {
+        type: "image",
+        id: "1IiTa4hUHAAWFIS6nu9PkrKaHjcW-Dzmt"
+      },
+      {
+        type: "image",
+        id: "1_2febscGC-VMWCeZ1L1A6tAda2nElI5_"
+      },
+      {
+        type: "image",
+        id: "1SGnr5zjLr45yFaUB9fmqFaOKws4NKS-j"
+      },
+      {
+        type: "image",
+        id: "12ysk-3g-gdaCZWat50s-9j2KhpyubcOR"
+      },
+      {
+        type: "image",
+        id: "1s3SJeJe0VquBI0Ye5GOBkDEQKpayrmF0"
+      },
+      {
+        type: "image",
+        id: "1LApEqZ4eHB7OMUGggOVemGjmJyxsSAET"
+      }
     ]
   },
 
 
   sm: {
     title: "SM Supermalls",
-    category: "Operations · Events · Marketing",
-    role: "Operations Intern · MSME",
-    year: "2025 — 2026",
-
+    category: "Operations · Marketing · Events",
     description:
-      "Worked under the MSME team at SM Supermalls Head Office, supporting mall monitoring, reporting, documentation, event coordination, presentations, partnership materials, and physical marketing initiatives.",
+      "Operations internship experience supporting MSME monitoring, reporting, documentation, presentations, mall coordination, partnerships, and events.",
 
-    services: [
+    tags: [
       "Operations",
       "Reporting",
-      "Documentation",
-      "Event Coordination",
-      "Presentations",
-      "Partnerships",
-      "Physical Marketing"
+      "Events",
+      "Coordination"
     ],
 
     media: []
@@ -193,20 +298,15 @@ const projects = {
 
 
   web3: {
-    title: "Web3",
-    category: "Community · Marketing · Partnerships",
-    role: "Community · Marketing · Partnerships",
-    year: "2022 — 2024",
-
+    title: "Web3 & Community",
+    category: "Community Building · Partnerships",
     description:
-      "Started working in Web3 and digital communities while young, working across community management, Discord moderation, community building, partnerships, strategic communications, and digital marketing for more than 30 brands and projects.",
+      "Selected Web3 experience covering community management, Discord moderation, partnerships, community building, and digital marketing across multiple projects and brands.",
 
-    services: [
-      "Community Management",
-      "Discord Moderation",
-      "Community Building",
+    tags: [
+      "Community",
+      "Web3",
       "Partnerships",
-      "Strategic Communications",
       "Digital Marketing"
     ],
 
@@ -217,69 +317,139 @@ const projects = {
 
 
 /* =========================================================
-   DOM
+   GOOGLE DRIVE HELPERS
 ========================================================= */
 
-const projectModal =
-  document.getElementById("projectModal");
+function driveImage(id) {
+  return `https://drive.google.com/thumbnail?id=${id}&sz=w1600`;
+}
 
-const modalContent =
-  document.getElementById("modalContent");
-
-const lightbox =
-  document.getElementById("lightbox");
-
-const lightboxImage =
-  document.getElementById("lightboxImage");
-
-const lightboxVideo =
-  document.getElementById("lightboxVideo");
-
-const modalClose =
-  document.querySelector(".modal-close");
-
-const lightboxClose =
-  document.querySelector(".lightbox-close");
-
-const lightboxPrev =
-  document.querySelector(".lightbox-prev");
-
-const lightboxNext =
-  document.querySelector(".lightbox-next");
-
-const workCards =
-  document.querySelectorAll(".work-card");
+function drivePreview(id) {
+  return `https://drive.google.com/file/d/${id}/preview`;
+}
 
 
 /* =========================================================
-   STATE
+   SET PROJECT COVER IMAGES
 ========================================================= */
 
-let currentProject = null;
-let currentMediaIndex = 0;
+function loadProjectCovers() {
+
+  document
+    .querySelectorAll(".work-card[data-project]")
+    .forEach(card => {
+
+      const projectKey = card.dataset.project;
+      const project = projects[projectKey];
+
+      if (!project || !project.cover) return;
+
+      const image = card.querySelector(".work-media img");
+
+      if (!image) return;
+
+      image.src = driveImage(project.cover);
+
+      image.loading = "lazy";
+
+      image.onerror = function () {
+
+        this.src =
+          `https://drive.google.com/uc?export=view&id=${project.cover}`;
+
+      };
+
+    });
+}
 
 
 /* =========================================================
-   MEDIA COUNTS
+   PROJECT MODAL
 ========================================================= */
 
-function getMediaCounts(project) {
+let activeProject = null;
 
-  const photos =
-    project.media.filter(
-      item => item[0] === "image"
-    ).length;
 
-  const videos =
-    project.media.filter(
-      item => item[0] === "video"
-    ).length;
+function createProjectModal() {
 
-  return {
-    photos,
-    videos,
-    total: photos + videos
-  };
+  if (document.getElementById("projectModalDynamic")) {
+    return;
+  }
+
+  const modal = document.createElement("div");
+
+  modal.id = "projectModalDynamic";
+
+  modal.innerHTML = `
+
+    <div class="dynamic-modal-backdrop"></div>
+
+    <div class="dynamic-modal">
+
+      <button
+        class="dynamic-modal-close"
+        type="button"
+        aria-label="Close project"
+      >
+        ×
+      </button>
+
+      <div class="dynamic-modal-header">
+
+        <div class="dynamic-modal-category"></div>
+
+        <h2 class="dynamic-modal-title"></h2>
+
+        <p class="dynamic-modal-description"></p>
+
+        <div class="dynamic-modal-tags"></div>
+
+      </div>
+
+      <div class="dynamic-gallery-heading">
+
+        <span>SELECTED WORK</span>
+
+        <small class="dynamic-gallery-count"></small>
+
+      </div>
+
+      <div class="dynamic-project-gallery"></div>
+
+    </div>
+  `;
+
+  document.body.appendChild(modal);
+
+
+  /* Close button */
+
+  modal
+    .querySelector(".dynamic-modal-close")
+    .addEventListener("click", closeProject);
+
+
+  /* Backdrop */
+
+  modal
+    .querySelector(".dynamic-modal-backdrop")
+    .addEventListener("click", closeProject);
+
+
+  /* Escape key */
+
+  document.addEventListener("keydown", event => {
+
+    if (
+      event.key === "Escape" &&
+      modal.classList.contains("is-open")
+    ) {
+
+      closeProject();
+
+    }
+
+  });
 
 }
 
@@ -290,33 +460,206 @@ function getMediaCounts(project) {
 
 function openProject(projectKey) {
 
-  const project =
-    projects[projectKey];
+  const project = projects[projectKey];
 
-  if (!project) return;
+  if (!project) {
+    console.warn("Project not found:", projectKey);
+    return;
+  }
 
-  currentProject =
-    projectKey;
+  createProjectModal();
 
-  currentMediaIndex = 0;
+  activeProject = projectKey;
 
-  modalContent.innerHTML =
-    buildProjectModal(project);
+  const modal =
+    document.getElementById("projectModalDynamic");
 
-  projectModal.classList.add("active");
+  const category =
+    modal.querySelector(".dynamic-modal-category");
 
-  projectModal.setAttribute(
-    "aria-hidden",
-    "false"
-  );
+  const title =
+    modal.querySelector(".dynamic-modal-title");
 
-  document.body.classList.add(
-    "modal-open"
-  );
+  const description =
+    modal.querySelector(".dynamic-modal-description");
 
-  projectModal.scrollTop = 0;
+  const tags =
+    modal.querySelector(".dynamic-modal-tags");
 
-  attachGalleryListeners();
+  const gallery =
+    modal.querySelector(".dynamic-project-gallery");
+
+  const count =
+    modal.querySelector(".dynamic-gallery-count");
+
+
+  category.textContent = project.category;
+
+  title.textContent = project.title;
+
+  description.textContent = project.description;
+
+
+  tags.innerHTML = "";
+
+  if (project.tags) {
+
+    project.tags.forEach(tag => {
+
+      const element =
+        document.createElement("span");
+
+      element.textContent = tag;
+
+      tags.appendChild(element);
+
+    });
+
+  }
+
+
+  gallery.innerHTML = "";
+
+
+  if (!project.media || project.media.length === 0) {
+
+    gallery.innerHTML = `
+
+      <div class="dynamic-no-media">
+
+        <strong>Project details coming together.</strong>
+
+        <p>
+          More selected work from this project will be added here.
+        </p>
+
+      </div>
+
+    `;
+
+  } else {
+
+    project.media.forEach((item, index) => {
+
+      const mediaItem =
+        createMediaItem(item, index);
+
+      gallery.appendChild(mediaItem);
+
+    });
+
+  }
+
+
+  count.textContent =
+    project.media && project.media.length
+      ? `${project.media.length} pieces`
+      : "";
+
+
+  modal.classList.add("is-open");
+
+  document.body.style.overflow = "hidden";
+
+}
+
+
+/* =========================================================
+   CREATE MEDIA ITEM
+========================================================= */
+
+function createMediaItem(item, index) {
+
+  const wrapper =
+    document.createElement("div");
+
+  wrapper.className =
+    "dynamic-media-item";
+
+
+  /* IMAGE */
+
+  if (item.type === "image") {
+
+    wrapper.innerHTML = `
+
+      <img
+        src="${driveImage(item.id)}"
+        alt="Project work ${index + 1}"
+        loading="lazy"
+      >
+
+      <div class="dynamic-media-overlay">
+
+        <span>View image</span>
+
+      </div>
+
+      <div class="dynamic-media-number">
+        ${String(index + 1).padStart(2, "0")}
+      </div>
+
+    `;
+
+
+    const image =
+      wrapper.querySelector("img");
+
+
+    image.onerror = function () {
+
+      this.src =
+        `https://drive.google.com/uc?export=view&id=${item.id}`;
+
+    };
+
+
+    wrapper.addEventListener("click", () => {
+
+      openImageLightbox(item.id);
+
+    });
+
+  }
+
+
+  /* VIDEO */
+
+  if (item.type === "video") {
+
+    wrapper.innerHTML = `
+
+      <div class="dynamic-video-thumbnail">
+
+        <iframe
+          src="${drivePreview(item.id)}"
+          allow="autoplay"
+          loading="lazy"
+          title="Project video"
+        ></iframe>
+
+        <div class="dynamic-video-overlay">
+
+          <div class="dynamic-play">
+            ▶
+          </div>
+
+          <span>Watch video</span>
+
+        </div>
+
+      </div>
+
+      <div class="dynamic-media-number">
+        ${String(index + 1).padStart(2, "0")}
+      </div>
+
+    `;
+
+  }
+
+
+  return wrapper;
 
 }
 
@@ -327,485 +670,83 @@ function openProject(projectKey) {
 
 function closeProject() {
 
-  projectModal.classList.remove(
-    "active"
-  );
+  const modal =
+    document.getElementById("projectModalDynamic");
 
-  projectModal.setAttribute(
-    "aria-hidden",
-    "true"
-  );
+  if (!modal) return;
 
-  document.body.classList.remove(
-    "modal-open"
-  );
+  modal.classList.remove("is-open");
 
-  closeLightbox();
-
-  currentProject = null;
-
-  modalContent.innerHTML = "";
+  document.body.style.overflow = "";
 
 }
 
 
 /* =========================================================
-   BUILD PROJECT MODAL
+   IMAGE LIGHTBOX
 ========================================================= */
 
-function buildProjectModal(project) {
+function openImageLightbox(id) {
 
-  const counts =
-    getMediaCounts(project);
+  let lightbox =
+    document.getElementById("dynamicLightbox");
 
 
-  const servicesHTML =
-    project.services
-      .map(service => `
-        <span>${escapeHTML(service)}</span>
-      `)
-      .join("");
+  if (!lightbox) {
 
+    lightbox =
+      document.createElement("div");
 
-  const galleryHTML =
-    project.media.length
-      ? project.media
-          .map(
-            (item, index) =>
-              buildGalleryItem(
-                item,
-                index
-              )
-          )
-          .join("")
-      : `
-        <div class="project-no-media">
+    lightbox.id =
+      "dynamicLightbox";
 
-          <span>PROJECT OVERVIEW</span>
+    lightbox.innerHTML = `
 
-          <p>
-            Visual documentation available upon request.
-          </p>
-
-        </div>
-      `;
-
-
-  return `
-
-    <div class="project-modal-inner">
-
-
-      <!-- PROJECT HEADER -->
-
-      <header class="modal-project-header">
-
-        <div class="modal-project-topline">
-
-          <span>
-            ${escapeHTML(project.category)}
-          </span>
-
-          <span>
-            ${escapeHTML(project.year)}
-          </span>
-
-        </div>
-
-
-        <div class="modal-title-row">
-
-          <div>
-
-            <h2>
-              ${escapeHTML(project.title)}
-            </h2>
-
-            <p class="modal-description">
-              ${escapeHTML(project.description)}
-            </p>
-
-          </div>
-
-
-          <div class="modal-media-summary">
-
-            <strong>
-              ${counts.total}
-            </strong>
-
-            <span>
-              CREATIVE PIECES
-            </span>
-
-            <small>
-              ${counts.photos} photos
-              ${counts.videos ? ` · ${counts.videos} videos` : ""}
-            </small>
-
-          </div>
-
-        </div>
-
-      </header>
-
-
-      <!-- ROLE / SERVICES -->
-
-      <div class="modal-project-details">
-
-        <div class="modal-detail-block">
-
-          <span class="detail-label">
-            ROLE
-          </span>
-
-          <strong>
-            ${escapeHTML(project.role)}
-          </strong>
-
-        </div>
-
-
-        <div class="modal-detail-block">
-
-          <span class="detail-label">
-            WHAT I WORKED ON
-          </span>
-
-          <div class="modal-services">
-            ${servicesHTML}
-          </div>
-
-        </div>
-
-      </div>
-
-
-      <!-- GALLERY INTRO -->
-
-      ${
-        project.media.length
-          ? `
-
-            <div class="gallery-heading">
-
-              <div>
-
-                <span class="gallery-eyebrow">
-                  CREATIVE OUTPUT
-                </span>
-
-                <h3>
-                  Explore the work.
-                </h3>
-
-              </div>
-
-
-              <p>
-                Click any piece to view it larger.
-              </p>
-
-            </div>
-
-          `
-          : ""
-      }
-
-
-      <!-- CREATIVE GALLERY -->
-
-      <div class="project-gallery">
-
-        ${galleryHTML}
-
-      </div>
-
-
-      ${
-        project.media.length
-          ? `
-
-            <div class="gallery-footer">
-
-              <span>
-                ${counts.photos} PHOTOS
-              </span>
-
-              ${
-                counts.videos
-                  ? `
-                    <span>
-                      ${counts.videos} VIDEOS
-                    </span>
-                  `
-                  : ""
-              }
-
-              <span>
-                CLICK TO EXPLORE
-              </span>
-
-            </div>
-
-          `
-          : ""
-      }
-
-
-    </div>
-
-  `;
-
-}
-
-
-/* =========================================================
-   GALLERY ITEM
-========================================================= */
-
-function buildGalleryItem(
-  item,
-  index
-) {
-
-  const type =
-    item[0];
-
-  const id =
-    item[1];
-
-  const alt =
-    item[2];
-
-
-  if (type === "video") {
-
-    return `
+      <div class="dynamic-lightbox-backdrop"></div>
 
       <button
+        class="dynamic-lightbox-close"
         type="button"
-        class="project-media-item gallery-video"
-        data-media-index="${index}"
       >
-
-        <div class="video-preview">
-
-          <div class="video-preview-gradient"></div>
-
-          <span class="video-play-button">
-            ▶
-          </span>
-
-          <span class="video-badge">
-            VIDEO
-          </span>
-
-          <span class="media-number">
-            ${String(index + 1).padStart(2, "0")}
-          </span>
-
-        </div>
-
+        ×
       </button>
+
+      <img
+        class="dynamic-lightbox-image"
+        alt="Project image"
+      >
 
     `;
 
-  }
+    document.body.appendChild(lightbox);
 
 
-  return `
-
-    <button
-      type="button"
-      class="project-media-item gallery-image"
-      data-media-index="${index}"
-    >
-
-      <img
-        src="${driveImage(id, "w1600")}"
-        alt="${escapeHTML(alt)}"
-        loading="lazy"
-      />
+    lightbox
+      .querySelector(".dynamic-lightbox-backdrop")
+      .addEventListener("click", closeLightbox);
 
 
-      <div class="media-hover">
-
-        <span>
-          VIEW
-        </span>
-
-        <span>
-          ↗
-        </span>
-
-      </div>
-
-
-      <span class="media-number">
-        ${String(index + 1).padStart(2, "0")}
-      </span>
-
-    </button>
-
-  `;
-
-}
-
-
-/* =========================================================
-   GALLERY EVENTS
-========================================================= */
-
-function attachGalleryListeners() {
-
-  const mediaItems =
-    document.querySelectorAll(
-      ".project-media-item"
-    );
-
-
-  mediaItems.forEach(item => {
-
-    item.addEventListener(
-      "click",
-      () => {
-
-        const index =
-          Number(
-            item.dataset.mediaIndex
-          );
-
-        openLightbox(index);
-
-      }
-    );
-
-  });
-
-}
-
-
-/* =========================================================
-   LIGHTBOX
-========================================================= */
-
-function openLightbox(index) {
-
-  if (!currentProject) return;
-
-
-  const project =
-    projects[currentProject];
-
-
-  if (!project.media.length) {
-    return;
-  }
-
-
-  if (index < 0) {
-
-    index =
-      project.media.length - 1;
+    lightbox
+      .querySelector(".dynamic-lightbox-close")
+      .addEventListener("click", closeLightbox);
 
   }
 
 
-  if (
-    index >=
-    project.media.length
-  ) {
+  const image =
+    lightbox.querySelector(".dynamic-lightbox-image");
 
-    index = 0;
+  image.src = driveImage(id);
 
-  }
+  image.onerror = function () {
 
+    this.src =
+      `https://drive.google.com/uc?export=view&id=${id}`;
 
-  currentMediaIndex =
-    index;
-
-
-  const item =
-    project.media[index];
+  };
 
 
-  lightbox.classList.add(
-    "active"
-  );
-
-  lightbox.setAttribute(
-    "aria-hidden",
-    "false"
-  );
-
-
-  renderLightboxMedia(item);
-
-}
-
-
-/* =========================================================
-   LIGHTBOX MEDIA
-========================================================= */
-
-function renderLightboxMedia(item) {
-
-  stopLightboxVideo();
-
-
-  if (item[0] === "image") {
-
-    lightboxImage.src =
-      driveImage(
-        item[1],
-        "w2400"
-      );
-
-    lightboxImage.alt =
-      item[2] || "";
-
-
-    lightboxImage.style.display =
-      "block";
-
-
-    lightboxVideo.style.display =
-      "none";
-
-
-    return;
-
-  }
-
-
-  if (item[0] === "video") {
-
-    lightboxImage.style.display =
-      "none";
-
-
-    lightboxVideo.style.display =
-      "block";
-
-
-    lightboxVideo.src =
-      drivePreview(item[1]);
-
-
-    lightboxVideo.setAttribute(
-      "allow",
-      "autoplay; fullscreen"
-    );
-
-
-    lightboxVideo.setAttribute(
-      "allowfullscreen",
-      ""
-    );
-
-  }
+  lightbox.classList.add("is-open");
 
 }
 
@@ -816,370 +757,167 @@ function renderLightboxMedia(item) {
 
 function closeLightbox() {
 
+  const lightbox =
+    document.getElementById("dynamicLightbox");
+
   if (!lightbox) return;
 
-
-  lightbox.classList.remove(
-    "active"
-  );
-
-
-  lightbox.setAttribute(
-    "aria-hidden",
-    "true"
-  );
-
-
-  stopLightboxVideo();
+  lightbox.classList.remove("is-open");
 
 }
 
 
 /* =========================================================
-   STOP VIDEO
+   PROJECT CARD CLICK
 ========================================================= */
 
-function stopLightboxVideo() {
+function setupProjectCards() {
 
-  if (!lightboxVideo) return;
+  document
+    .querySelectorAll(".work-card[data-project]")
+    .forEach(card => {
 
-  lightboxVideo.src = "";
+      card.addEventListener("click", event => {
 
-}
+        event.preventDefault();
 
+        event.stopPropagation();
 
-/* =========================================================
-   NAVIGATION
-========================================================= */
+        const projectKey =
+          card.dataset.project;
 
-function nextMedia() {
+        openProject(projectKey);
 
-  if (!currentProject) return;
+      });
 
-
-  const project =
-    projects[currentProject];
-
-
-  openLightbox(
-    currentMediaIndex + 1
-  );
+    });
 
 }
-
-
-function previousMedia() {
-
-  if (!currentProject) return;
-
-
-  openLightbox(
-    currentMediaIndex - 1
-  );
-
-}
-
-
-/* =========================================================
-   WORK CARDS
-========================================================= */
-
-workCards.forEach(card => {
-
-  card.addEventListener(
-    "click",
-    () => {
-
-      const projectKey =
-        card.dataset.project;
-
-      if (!projectKey) return;
-
-      openProject(projectKey);
-
-    }
-  );
-
-});
-
-
-/* =========================================================
-   CLOSE BUTTONS
-========================================================= */
-
-if (modalClose) {
-
-  modalClose.addEventListener(
-    "click",
-    closeProject
-  );
-
-}
-
-
-if (lightboxClose) {
-
-  lightboxClose.addEventListener(
-    "click",
-    closeLightbox
-  );
-
-}
-
-
-if (lightboxNext) {
-
-  lightboxNext.addEventListener(
-    "click",
-    nextMedia
-  );
-
-}
-
-
-if (lightboxPrev) {
-
-  lightboxPrev.addEventListener(
-    "click",
-    previousMedia
-  );
-
-}
-
-
-/* =========================================================
-   BACKDROP CLICK
-========================================================= */
-
-if (projectModal) {
-
-  projectModal.addEventListener(
-    "click",
-    event => {
-
-      if (
-        event.target === projectModal
-      ) {
-
-        closeProject();
-
-      }
-
-    }
-  );
-
-}
-
-
-if (lightbox) {
-
-  lightbox.addEventListener(
-    "click",
-    event => {
-
-      if (
-        event.target === lightbox
-      ) {
-
-        closeLightbox();
-
-      }
-
-    }
-  );
-
-}
-
-
-/* =========================================================
-   KEYBOARD
-========================================================= */
-
-document.addEventListener(
-  "keydown",
-  event => {
-
-    if (
-      event.key === "Escape"
-    ) {
-
-      if (
-        lightbox.classList.contains(
-          "active"
-        )
-      ) {
-
-        closeLightbox();
-
-      } else if (
-        projectModal.classList.contains(
-          "active"
-        )
-      ) {
-
-        closeProject();
-
-      }
-
-    }
-
-
-    if (
-      lightbox.classList.contains(
-        "active"
-      )
-    ) {
-
-      if (
-        event.key === "ArrowRight"
-      ) {
-
-        nextMedia();
-
-      }
-
-
-      if (
-        event.key === "ArrowLeft"
-      ) {
-
-        previousMedia();
-
-      }
-
-    }
-
-  }
-);
 
 
 /* =========================================================
    SMOOTH SCROLL
 ========================================================= */
 
-document
-  .querySelectorAll(
-    'a[href^="#"]'
-  )
-  .forEach(anchor => {
+function setupSmoothScroll() {
 
-    anchor.addEventListener(
-      "click",
-      event => {
+  document
+    .querySelectorAll('a[href^="#"]')
+    .forEach(link => {
 
-        const targetID =
-          anchor.getAttribute(
-            "href"
-          );
+      link.addEventListener("click", event => {
 
+        const targetId =
+          link.getAttribute("href");
 
         if (
-          !targetID ||
-          targetID === "#"
+          !targetId ||
+          targetId === "#"
         ) {
-
           return;
-
         }
 
-
         const target =
-          document.querySelector(
-            targetID
-          );
-
+          document.querySelector(targetId);
 
         if (!target) return;
 
-
         event.preventDefault();
-
 
         target.scrollIntoView({
           behavior: "smooth",
           block: "start"
         });
 
-      }
-    );
+      });
 
-  });
+    });
+
+}
 
 
 /* =========================================================
-   HEADER
+   HEADER SCROLL EFFECT
 ========================================================= */
 
-const siteHeader =
-  document.querySelector(
-    ".site-header"
-  );
+function setupHeaderScroll() {
 
+  const header =
+    document.querySelector(".site-header");
 
-function updateHeader() {
+  if (!header) return;
 
-  if (!siteHeader) return;
+  function updateHeader() {
 
+    if (window.scrollY > 30) {
 
-  siteHeader.classList.toggle(
-    "scrolled",
-    window.scrollY > 40
+      header.classList.add("is-scrolled");
+
+    } else {
+
+      header.classList.remove("is-scrolled");
+
+    }
+
+  }
+
+  updateHeader();
+
+  window.addEventListener(
+    "scroll",
+    updateHeader,
+    { passive: true }
   );
 
 }
 
 
-window.addEventListener(
-  "scroll",
-  updateHeader,
-  {
-    passive: true
-  }
-);
-
-
-updateHeader();
-
-
 /* =========================================================
-   REVEAL
+   REVEAL ANIMATION
 ========================================================= */
 
-const revealElements =
-  document.querySelectorAll(
-    ".section-heading, .about-main, .about-side, .capability-item, .work-card, .experience-row, .tools-section, .contact-container"
-  );
+function setupReveal() {
+
+  const elements =
+    document.querySelectorAll(".reveal");
+
+  if (!elements.length) return;
 
 
-if (
-  "IntersectionObserver"
-  in window
-) {
+  /*
+    We keep the animation subtle.
+    If IntersectionObserver is unavailable,
+    everything remains visible.
+  */
 
-  const revealObserver =
+  if (!("IntersectionObserver" in window)) {
+
+    elements.forEach(element => {
+
+      element.classList.add("visible");
+
+    });
+
+    return;
+
+  }
+
+
+  const observer =
     new IntersectionObserver(
       entries => {
 
-        entries.forEach(
-          entry => {
+        entries.forEach(entry => {
 
-            if (
-              entry.isIntersecting
-            ) {
+          if (entry.isIntersecting) {
 
-              entry.target.classList.add(
-                "is-visible"
-              );
+            entry.target.classList.add("visible");
 
-
-              revealObserver.unobserve(
-                entry.target
-              );
-
-            }
+            observer.unobserve(entry.target);
 
           }
-        );
+
+        });
 
       },
       {
@@ -1188,121 +926,45 @@ if (
     );
 
 
-  revealElements.forEach(
-    element => {
+  elements.forEach(element => {
 
-      element.classList.add(
-        "reveal"
-      );
+    observer.observe(element);
 
-
-      revealObserver.observe(
-        element
-      );
-
-    }
-  );
+  });
 
 }
 
 
 /* =========================================================
-   ESCAPE HTML
+   GLOBAL ESCAPE KEY
 ========================================================= */
 
-function escapeHTML(value) {
+document.addEventListener("keydown", event => {
 
-  return String(value)
-    .replace(
-      /&/g,
-      "&amp;"
-    )
-    .replace(
-      /</g,
-      "&lt;"
-    )
-    .replace(
-      />/g,
-      "&gt;"
-    )
-    .replace(
-      /"/g,
-      "&quot;"
-    )
-    .replace(
-      /'/g,
-      "&#039;"
-    );
+  if (event.key !== "Escape") return;
 
-}
+  closeLightbox();
+
+});
 
 
 /* =========================================================
-   BODY SCROLL CONTROL
+   INITIALIZE
 ========================================================= */
 
-const bodyObserver =
-  new MutationObserver(
-    () => {
+document.addEventListener(
+  "DOMContentLoaded",
+  () => {
 
-      const projectOpen =
-        projectModal &&
-        projectModal.classList.contains(
-          "active"
-        );
+    loadProjectCovers();
 
+    setupProjectCards();
 
-      const lightboxOpen =
-        lightbox &&
-        lightbox.classList.contains(
-          "active"
-        );
+    setupSmoothScroll();
 
+    setupHeaderScroll();
 
-      document.body.classList.toggle(
-        "modal-open",
-        projectOpen ||
-        lightboxOpen
-      );
+    setupReveal();
 
-    }
-  );
-
-
-if (projectModal) {
-
-  bodyObserver.observe(
-    projectModal,
-    {
-      attributes: true,
-      attributeFilter: [
-        "class"
-      ]
-    }
-  );
-
-}
-
-
-if (lightbox) {
-
-  bodyObserver.observe(
-    lightbox,
-    {
-      attributes: true,
-      attributeFilter: [
-        "class"
-      ]
-    }
-  );
-
-}
-
-
-/* =========================================================
-   INITIALIZED
-========================================================= */
-
-console.log(
-  "Angelo Pacya Portfolio — Gallery Ready"
+  }
 );
